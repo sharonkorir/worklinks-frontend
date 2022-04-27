@@ -28,9 +28,10 @@ nav{
 }
 .about .left{
    padding:2% 0;
-   float:left;
+  line-height: 5rem;
    width:50%;
    display:inline-block;
+   font-size: xx-large;
 }
 .about .right{
    width:50%;
@@ -68,7 +69,7 @@ nav{
    display:inline-block;
 }
 .mission .left{
-   float:right;
+ 
    width:45%;
 
    display:inline-block;
