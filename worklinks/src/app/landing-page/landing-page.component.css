@@ -56,17 +56,12 @@ nav{
    width:80%
 }
 
-.mission{
-   padding:5% 0;
-   width:100%;
-   height:auto;
-   background-color:#fff;
-}
+
 .mission .right{
    padding:2% 0;
    width:50%;
-
-   display:inline-block;
+display:inline-block;
+margin-left: 2rem;
 }
 .mission .left{
  
