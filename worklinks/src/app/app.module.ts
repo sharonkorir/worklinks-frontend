@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EmployerLoginComponent } from './employer-login/employer-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployerSignupComponent
+    EmployerSignupComponent,
+    EmployerLoginComponent
   ],
   imports: [
     BrowserModule,

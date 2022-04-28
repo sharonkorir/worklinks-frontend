@@ -9,7 +9,11 @@ import { FormControl } from '@angular/forms';
 })
 export class EmployerSignupComponent implements OnInit {
 
-  username = new FormControl('');
+  email = new FormControl('');
+  name = new FormControl('');
+  phone = new FormControl('');
+  password1 = new FormControl('');
+  password2 = new FormControl('');
 
   constructor() { }
 
