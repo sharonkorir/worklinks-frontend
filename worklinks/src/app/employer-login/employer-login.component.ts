@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, Validators} from '@angular/forms';
 
 
 @Component({
@@ -9,25 +9,24 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class EmployerLoginComponent implements OnInit {
 
-  email = new FormControl('');
-  // name = new FormControl('');
-  // phone = new FormControl('');
-  password1 = new FormControl('');
-  // password2 = new FormControl('');
+ 
 
-  loginForm!: FormGroup
+  loginForm = this.fb.group({
+    email: ["" ,Validators.required],
+    // username : ["" ,Validators.required],
+    // phone : ["" ,Validators.required],
+    password1 : ["" ,Validators.required],
+  
+  })
 
-  constructor() { }
+  get email(){return this.loginForm.get('email')}
+  get password1(){return this.loginForm.get('password1')}
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    this.loginForm = new FormGroup({
-      email : new FormControl(''),
-      // username : new FormControl(''),
-      // companynName : new FormControl(''),
-      // phone : new FormControl(''),
-      password1 : new FormControl(''),
-      // password2 : new FormControl(''),
-    })
   }
-
+  onSubmit(){
+    console.log(this.loginForm.value);
+  }
 }

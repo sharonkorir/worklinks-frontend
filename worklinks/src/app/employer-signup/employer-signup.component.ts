@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -9,26 +9,34 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class EmployerSignupComponent implements OnInit {
 
-  email = new FormControl('');
-  username = new FormControl('');
-  companyName = new FormControl('');
-  phone = new FormControl('');
-  password1 = new FormControl('');
-  password2 = new FormControl('');
+  // email = new FormControl('');
+  // username = new FormControl('');
+  // companyName = new FormControl('');
+  // phone = new FormControl('');
+  // password1 = new FormControl('');
+  // password2 = new FormControl('');
 
-  registerForm!: FormGroup
+  registerForm = this.fb.group({
+    email: ["" ,Validators.required],
+    username : ["",Validators.required],
+    companyName : ["",Validators.required],
+    phone : ["",Validators.required],
+    password1 : ["",Validators.required],
+    password2 : ["",Validators.required],
+  })
 
-  constructor() { }
+  get email(){return this.registerForm.get('email')}
+  get password1(){return this.registerForm.get('password1')}
+  get password2(){return this.registerForm.get('password2')}
+  get username(){return this.registerForm.get('username')}
+  get phone(){return this.registerForm.get('phone')}
+  get companyName(){return this.registerForm.get('companyName')}
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
-    this.registerForm = new FormGroup({
-      email : new FormControl(''),
-      username : new FormControl(''),
-      companynName : new FormControl(''),
-      phone : new FormControl(''),
-      password1 : new FormControl(''),
-      password2 : new FormControl(''),
-    })
   }
-
+  onSubmit(){
+    console.log(this.registerForm.value);
+  }
 }

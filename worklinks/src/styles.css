@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-sec{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+}
