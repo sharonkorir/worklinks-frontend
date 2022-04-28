@@ -5,42 +5,43 @@
       <div class="text-center">
         <h5>Sign in and browse our job seekers</h5>
       </div>
-      <div class="form-group">
+      <form [formGroup]="loginForm" action="" >
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address:</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [formControl]="email">
-          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-        </div>
-        <!-- <div class="form-group">
-          <label for="name">Company name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Company name:" [formControl]="name">
-        </div>
-        <div class="form-group">
-          <label for="Phone">Phone number:</label>
-          <input type="text" class="form-control" id="phone" placeholder="phone number" [formControl]="phone">
-        </div> -->
-        <div class="form-group">
-          <label for="Password1">Password:</label>
-          <input type="password" class="form-control" id="Password1" placeholder="Password" [formControl]="password1">
-          <!-- <div id="passwordHelpBlock" class="form-text">
-            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-          </div> -->
-        </div>
-        <!-- <div class="form-group">
-          <label for="Password2">Confirm password</label>
-          <input type="password" class="form-control" id="Password2" placeholder="Confirm password" [formControl]="password2">
-          <div id="passwordHelpBlock" class="form-text">
-            Your password must match
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
           </div>
-        </div> -->
-        <div>
-          <!-- <button type="submit" class="btn btn-primary">Back</button> -->
-          <button type="submit" class="btn btn-primary">Sign In</button>
+          <!-- <div class="form-group">
+            <label for="name">Company name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Company name:" formControlName="name">
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone number:</label>
+            <input type="text" class="form-control" id="phone" placeholder="phone number" formControlName="phone">
+          </div> -->
+          <div class="form-group">
+            <label for="Password1">Password:</label>
+            <input type="password" class="form-control" id="Password1" placeholder="Password" formControlName="password1">
+            <!-- <div id="passwordHelpBlock" class="form-text">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div> -->
+          </div>
+          <!-- <div class="form-group">
+            <label for="Password2">Confirm password</label>
+            <input type="password" class="form-control" id="Password2" placeholder="Confirm password" formControlName="password2">
+            <div id="passwordHelpBlock" class="form-text">
+              Your password must match
+            </div>
+          </div> -->
+          <div>
+            <!-- <button type="submit" class="btn btn-primary">Back</button> -->
+            <button type="submit" class="btn btn-primary">Sign In</button>
+          </div>
         </div>
-      </div>
+      </form>
+      
     </div>
   </div>
 </div>
-<p>
-  Value: {{name.value}} {{phone.value}}
-</p>
+

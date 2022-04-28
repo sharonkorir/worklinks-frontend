@@ -10,19 +10,21 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class EmployerSignupComponent implements OnInit {
 
   email = new FormControl('');
-  name = new FormControl('');
+  username = new FormControl('');
+  companyName = new FormControl('');
   phone = new FormControl('');
   password1 = new FormControl('');
   password2 = new FormControl('');
 
-  registerForm: FormGroup | undefined
+  registerForm!: FormGroup
 
   constructor() { }
 
   ngOnInit(): void {
     this.registerForm = new FormGroup({
       email : new FormControl(''),
-      name : new FormControl(''),
+      username : new FormControl(''),
+      companynName : new FormControl(''),
       phone : new FormControl(''),
       password1 : new FormControl(''),
       password2 : new FormControl(''),
