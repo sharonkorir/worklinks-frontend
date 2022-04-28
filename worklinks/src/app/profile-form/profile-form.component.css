@@ -26,3 +26,12 @@ form .form-group {
 .input-group label {
     color: #49224A;
 }
+
+.input-group option {
+    color: #49224A;
+}
+
+h4,
+h2 {
+    color: #E2AA2E;
+}
