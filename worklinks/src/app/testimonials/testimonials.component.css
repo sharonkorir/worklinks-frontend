@@ -249,3 +249,17 @@ ul {
   top: -10px;
   width: 120px;
 }
+ #topic1{
+   text-align: center;
+ }
+ 
+ #butt{
+   margin-left: 45rem;
+   flex: 1;
+   background-color: white;
+   font-weight: bolder;
+ }
+ #finya1{
+  margin-left: 25rem;
+  color: white;
+ }
