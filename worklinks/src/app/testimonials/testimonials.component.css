@@ -251,6 +251,7 @@ ul {
 }
  #topic1{
    text-align: center;
+   text-transform: capitalize;
  }
  
  #butt{
