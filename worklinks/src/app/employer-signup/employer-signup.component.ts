@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -15,9 +15,18 @@ export class EmployerSignupComponent implements OnInit {
   password1 = new FormControl('');
   password2 = new FormControl('');
 
+  registerForm: FormGroup | undefined
+
   constructor() { }
 
   ngOnInit(): void {
+    this.registerForm = new FormGroup({
+      email : new FormControl(''),
+      name : new FormControl(''),
+      phone : new FormControl(''),
+      password1 : new FormControl(''),
+      password2 : new FormControl(''),
+    })
   }
 
 }
