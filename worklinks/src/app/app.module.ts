@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
+import { EmployerNavbarComponent } from './employer-navbar/employer-navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployerSignupComponent,
-    EmployerLoginComponent
+    EmployerLoginComponent,
+    EmployerNavbarComponent
   ],
   imports: [
     BrowserModule,
