@@ -259,8 +259,10 @@ ul {
    flex: 1;
    background-color: white;
    font-weight: bolder;
+   font-family:'Big Shoulders Stencil Text', cursive;
  }
  #finya1{
   margin-left: 25rem;
   color: white;
+  font-family:'Big Shoulders Stencil Text', cursive;
  }
