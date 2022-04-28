@@ -7,16 +7,16 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
- 
-
-  
-
   .spacer {
     flex: 1;
   }
 
   .toolbar {
-    position: absolute;
+    position: fixed;
+    width: 100%;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+
+    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
@@ -24,8 +24,16 @@
     display: flex;
     align-items: center;
     background-color: #49224a;
-    color: black;
+    color: white;
     font-weight: 600;
+    
+  }
+  .toolbar> a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15rem;
+    color: white;
+    font-size: larger;
   }
 
   .toolbar img {
