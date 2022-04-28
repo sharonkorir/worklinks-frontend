@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+
 
 @Component({
   selector: 'app-employer-signup',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employer-signup.component.css']
 })
 export class EmployerSignupComponent implements OnInit {
+
+  name = new FormControl('');
 
   constructor() { }
 
