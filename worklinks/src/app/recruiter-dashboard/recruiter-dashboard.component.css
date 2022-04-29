@@ -18,3 +18,9 @@
 .card-title {
     text-align: center;
 }
+
+.jobs {
+    /* border: 2px solid red; */
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
