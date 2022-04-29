@@ -10,6 +10,7 @@ import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile
 import { FooterComponent } from './footer/footer.component';
 import { RecruiterNavbarComponent } from './recruiter-navbar/recruiter-navbar.component';
 import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-dashboard.component';
+import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-das
     RecruiterProfileComponent,
     FooterComponent,
     RecruiterNavbarComponent,
-    RecruiterDashboardComponent
+    RecruiterDashboardComponent,
+    PostJobFormComponent
   ],
   imports: [
     HttpClientModule,
