@@ -1,93 +1,69 @@
 <div class="container-fluid">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" font-family="Big Shoulders Stencil Display" href="#">WorkLinks</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="d-flex" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
-                        </li>
-                        <li>
-                            <button class="btn btn-primary" type="submit">LogOut</button>
-                        </li>
 
-                    </ul>
+    <app-recruiter-navbar></app-recruiter-navbar>
 
+    <h2 class="text-center">Create Company's Profile to get started with WorkLinks</h2>
+    <br>
+    <br>
 
-
-                </div>
-            </div>
-        </nav>
-
-        <h2 class="text-center">Create Company's Profile to get started with WorkLinks</h2>
-        <br>
-        <br>
+    <form>
         <h4>Company Information</h4>
 
         <hr>
-        <form>
+        <div class="form-group">
 
-            <div class="form-group">
+            <label for="name">Company Names</label>
 
-                <label for="name">Company Names</label>
+            <input type="text" required class="form-control" id="name">
 
-                <input type="text" required class="form-control" id="name">
+        </div>
+        <div class="form-group">
 
-            </div>
-            <div class="form-group">
+            <label for="name">Company Logo</label> <br>
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="file">
+            </form>
 
-                <label for="name">Company Logo</label> <br>
-                <form action="" method="post" enctype="multipart/form-data">
-                    <input type="file">
-                </form>
+        </div>
+        <div class="form-group">
 
-            </div>
-            <div class="form-group">
+            <label for="name">Location</label>
+            <input type="text" required class="form-control" id="name">
 
-                <label for="name">Location</label>
-                <input type="text" required class="form-control" id="name">
-
-            </div>
+        </div>
 
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label for="name">Website</label>
-                <input type="text" required class="form-control" id="name">
+            <label for="name">Website</label>
+            <input type="text" required class="form-control" id="name">
 
-            </div>
-            <div class="form-group">
+        </div>
+        <div class="form-group">
 
-                <label for="name">One Line pitch</label>
-                <input type="text" required class="form-control" id="name">
+            <label for="name">One Line pitch</label>
+            <input type="text" required class="form-control" id="name">
 
-            </div>
+        </div>
 
 
 
 
 
 
-            <br>
+        <br>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label for="description">Why Your Company</label>
-                <textarea class="form-control" id="description" rows="4" required></textarea>
+            <label for="description">Why Your Company</label>
+            <textarea class="form-control" id="description" rows="4" required></textarea>
 
-            </div>
-            <br>
-            <br>
-            <div class="btn">
-                <button type="submit" class="btn btn-success">Submit Profile</button>
+        </div>
+        <br>
+        <br>
+        <div class="btn">
+            <button type="submit" class="btn btn-success">Submit Profile</button>
 
-            </div>
-        </form>
-    </div>
+        </div>
+    </form>
+</div>
