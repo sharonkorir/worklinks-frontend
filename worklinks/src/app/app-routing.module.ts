@@ -4,8 +4,8 @@ import { EmployerSignupComponent } from './employer-signup/employer-signup.compo
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 
 const routes: Routes = [
-  { path: 'register', component: EmployerSignupComponent},
-  { path: 'login', component: EmployerLoginComponent},
+  { path: 'employer/register', component: EmployerSignupComponent},
+  { path: 'employer/login', component: EmployerLoginComponent},
 ];
 
 @NgModule({
