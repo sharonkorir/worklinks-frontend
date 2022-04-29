@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileFormComponent } from './profile-form/profile-form.component';
+import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    ProfileFormComponent
+    ProfileFormComponent,
+    RecruiterProfileComponent
   ],
   imports: [
     HttpClientModule,
