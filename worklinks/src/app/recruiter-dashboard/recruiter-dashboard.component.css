@@ -1,0 +1,20 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    margin-top: 4rem;
+}
+
+.d-flex input {
+    border: 2px solid #49224A;
+}
+
+.post-job {
+    margin-top: 4rem;
+}
+
+.card-title {
+    text-align: center;
+}

@@ -6,3 +6,11 @@
     text-decoration: none;
     color: white;
 }
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.dropdown-menu li a {
+    color: #49224A;
+}
