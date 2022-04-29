@@ -1,0 +1,20 @@
+nav{
+  /*text-align: center; */
+  background-color:#49224A;
+  
+}
+
+.navbar-brand{
+  color: white;
+  padding-left: 30px;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size:30px;
+}
+
+.navbar-brand:hover{
+  color: #E2AA2E;
+}
+
+.nav-link{
+  color: white;
+}
