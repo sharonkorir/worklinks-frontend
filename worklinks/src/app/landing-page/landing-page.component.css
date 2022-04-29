@@ -225,14 +225,20 @@ footer p{
 
 #picpic{
    margin-left: 40rem;
-   height: 20rem;
+   height: 18rem;
 }
 #line99{
    font-family:'Big Shoulders Stencil Text', cursive;
    text-align: center;
+   color: black;
 }
 .row{
    margin-top: -15rem;
 }
 
+#header3{
+   font-family: 'Courier New', Courier, monospace;
+   color: black;
+}
  
+/* progress bar */
