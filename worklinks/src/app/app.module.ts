@@ -9,6 +9,7 @@ import { ProfileFormComponent } from './profile-form/profile-form.component';
 import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile.component';
 import { FooterComponent } from './footer/footer.component';
 import { RecruiterNavbarComponent } from './recruiter-navbar/recruiter-navbar.component';
+import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-dashboard.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RecruiterNavbarComponent } from './recruiter-navbar/recruiter-navbar.co
     ProfileFormComponent,
     RecruiterProfileComponent,
     FooterComponent,
-    RecruiterNavbarComponent
+    RecruiterNavbarComponent,
+    RecruiterDashboardComponent
   ],
   imports: [
     HttpClientModule,
