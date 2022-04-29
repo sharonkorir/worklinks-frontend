@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileFormComponent } from './profile-form/profile-form.component';
 import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile
     AppComponent,
     ProfileComponent,
     ProfileFormComponent,
-    RecruiterProfileComponent
+    RecruiterProfileComponent,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,
