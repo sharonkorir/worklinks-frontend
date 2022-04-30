@@ -4,6 +4,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-dashboard.component';
 import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile.component';
 import { PostJobFormComponent } from './post-job-form/post-job-form.component';
+import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
 const routes: Routes = [
   {
     path:'',component:ProfileComponent
@@ -16,6 +17,9 @@ path:'recruiter-dashboard',component:RecruiterDashboardComponent
   },
   {
     path:'post-job',component:PostJobFormComponent
+  },
+  {
+    path:'seekers-profile',component:JobseekerProfilePageComponent
   }
 ];
 
