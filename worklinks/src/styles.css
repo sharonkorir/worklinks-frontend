@@ -3,15 +3,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&family=Chonburi&display=swap');
 
 
-.btn-pri{
-  background-color: #E2AA2E;
-  color: white;
-  margin-top: 20px;
-}
 
-.btn-sec{
-  background-color: white;
-  color: #E2AA2E;
-  border: solid #E2AA2E 1px;
-  margin-top: 20px;
-}

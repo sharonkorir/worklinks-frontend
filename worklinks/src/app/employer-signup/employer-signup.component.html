@@ -47,8 +47,29 @@
           </div>
           <!-- <p>Form status: {{registerForm.status}}</p> -->
           <div>
-            <button type="submit" class="btn btn-pri">Back</button>
-            <button type="submit" class="btn btn-sec">Get recruiter access</button>
+            <button type="submit" class="btn btn-pri" routerLink="/">Back</button>
+            <button type="submit" class="btn btn-sec"data-bs-toggle="modal" data-bs-target="#exampleModal">Get recruiter access</button>
+          </div>  
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Payment procedure</h6>
+                <ul>
+                  <li>Enter your mpesa number</li>
+                  <li>Submit the form and wait for a prompt on your phone</li>
+                  <li>Enter your mpesa pin and press okay to send</li>
+                </ul>
+              </div>
+              <div class="modal-body">
+                <form action=""></form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
       </form>

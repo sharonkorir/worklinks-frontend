@@ -8,4 +8,18 @@ form{
   border-radius: 20px 20px 20px 20px;
   padding: 60px;
   width: 100%;
+  margin-top: 80px;
+}
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-sec{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
 }
