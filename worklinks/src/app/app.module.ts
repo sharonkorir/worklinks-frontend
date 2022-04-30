@@ -7,6 +7,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
+import { SlidesComponent } from './slides/slides.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     NavigationBarComponent,
     LandingPageComponent,
     TestimonialsComponent,
-    FooterComponent
+    FooterComponent,
+    SlidesComponent
   ],
   imports: [
     BrowserModule,
