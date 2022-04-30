@@ -1,6 +1,6 @@
 
 body {
-    background: black;
+    background: #49224a;
     font-family: "Oswald", sans-serif;
     font-style: italic;
   }
@@ -23,7 +23,7 @@ body {
     content: attr(data-text);
     position: absolute;
     left: -2px;
-    text-shadow: -5px 0 magenta;
+    text-shadow: -5px 0 #49224a;
     background: black;
     overflow: hidden;
     top: 0;
