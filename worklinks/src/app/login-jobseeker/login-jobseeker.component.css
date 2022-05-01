@@ -36,7 +36,6 @@ nav{
     text-decoration: none;
     margin-right: 20px;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -101,14 +100,14 @@ button:hover {
   .container {
     background-color:white;
     width: 500px;
-    height: 700px;
+    height: 500px;
     border-color: rgb(32, 34, 32);
     border-width: 2px;
     box-shadow: 0px 0px 0px 1px ;
     border-radius: 20px 20px 20px 20px;
-    padding-top: 30px;
+    padding-top: 50px;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   
   /* Clear floats */
@@ -124,4 +123,3 @@ button:hover {
 label{
     margin-left: 40px;
 }
-   
