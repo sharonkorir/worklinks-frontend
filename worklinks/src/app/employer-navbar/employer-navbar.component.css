@@ -1,0 +1,40 @@
+nav{
+  /*text-align: center; */
+  background-color:#49224A;
+  
+}
+
+.navbar-brand{
+  color: white;
+  padding-left: 30px;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size:30px;
+}
+
+.navbar-brand:hover{
+  color: #E2AA2E;
+}
+
+.nav-link{
+  color: white;
+}
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-sec{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+}
+
+#login{
+  color:white;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
