@@ -9,6 +9,9 @@ import { EmployerLoginComponent } from './employer-login/employer-login.componen
 import { EmployerNavbarComponent } from './employer-navbar/employer-navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,6 +21,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     EmployerLoginComponent,
     EmployerNavbarComponent,
     SearchResultsComponent,
+    
 
   ],
   imports: [
@@ -26,6 +30,9 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatIconModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
