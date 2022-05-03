@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -26,9 +28,8 @@ export class EmployerSignupComponent implements OnInit {
   })
 
   mpesaForm = this.fb.group({
-    phone : ["",Validators.required],
-    amount : ["",Validators.required],
-    paymentMethod : ["",Validators.required],
+    amount: ["10,000" ,Validators.required],
+    contact : ["",Validators.required],
   })
 
   get email(){return this.registerForm.get('email')}
@@ -38,12 +39,26 @@ export class EmployerSignupComponent implements OnInit {
   get phone(){return this.registerForm.get('phone')}
   get companyName(){return this.registerForm.get('companyName')}
 
-  constructor(private fb: FormBuilder) { }
+  get contact(){return this.mpesaForm.get('contact')}
+  
+
+  constructor(
+    private fb: FormBuilder,
+    private http: HttpClient,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
   }
   onSubmit(){
-    console.log(this.registerForm.value);
+    console.log(this.registerForm.getRawValue());
+    /* add api endpoint to post ('') */
+    
+    
+  }
+  lipaNaMpesa(){
     console.log(this.mpesaForm.value);
+    this.http.post('', this.registerForm.getRawValue())
+      .subscribe(res => this.router.navigate(['/employer/register']));
   }
 }
