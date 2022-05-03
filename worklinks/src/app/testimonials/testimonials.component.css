@@ -253,7 +253,7 @@ ul {
    text-align: center;
    text-transform: capitalize;
    color: black;
-   font-family:'Big Shoulders Stencil Text', cursive;
+   /* font-family:'Big Shoulders Stencil Text', cursive; */
  }
  
  #butt{
@@ -269,7 +269,7 @@ ul {
   font-family:'Big Shoulders Stencil Text', cursive;
  }
  .topic09{
-  font-family:'Big Shoulders Stencil Text', cursive;
+  /* font-family:'Big Shoulders Stencil Text', cursive; */
  }
 
 

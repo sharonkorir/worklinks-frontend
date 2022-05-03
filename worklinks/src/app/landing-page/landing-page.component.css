@@ -228,7 +228,7 @@ footer p{
    height: 18rem;
 }
 #line99{
-   font-family:'Big Shoulders Stencil Text', cursive;
+   /* font-family:'Big Shoulders Stencil Text', cursive; */
    text-align: center;
    color: black;
 }

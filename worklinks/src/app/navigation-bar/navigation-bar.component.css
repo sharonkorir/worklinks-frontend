@@ -14,7 +14,7 @@
   .toolbar {
     position: fixed;
     width: 100%;
-    font-family: 'Big Shoulders Stencil Text', cursive;
+    /* font-family: 'Big Shoulders Stencil Text', cursive; */
 
     overflow: hidden;
     top: 0;
@@ -55,7 +55,17 @@
     opacity: 0.8;
   }
 
-
+  #loginb{
+    background-color: #49224A;
+    border-color: white;
+    margin-right: 10px;
+    color: white;
+}
+#signb{
+   background-color: white;
+   color: #49224A;
+   margin-right: 16px;
+}
 
 
 
