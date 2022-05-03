@@ -63,11 +63,26 @@
                 </ul>
               </div>
               <div class="modal-body">
-                <form action=""></form>
+                <form [formGroup]="mpesaForm" action="" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label for="Phone">Phone number:</label>
+                      <input type="text" class="form-control" id="phone" placeholder="phone number" formControlName="phone">
+                    </div>
+                    <div class="form-group">
+                      <label for="Payment method">Payment method:</label>
+                      <input type="text" class="form-control" id="paymentMethod" placeholder="Payment method" formControlName="paymentMethod">
+                    </div>
+                    <div class="form-group">
+                      <label for="Amount">Amount:</label>
+                      <input type="text" class="form-control" id="amount" placeholder="5000 KES" formControlName="amount">
+                    </div>
+                  </div>
+                </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-sec" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-pri">Make payment</button>
               </div>
             </div>
           </div>

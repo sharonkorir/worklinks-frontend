@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 import { EmployerNavbarComponent } from './employer-navbar/employer-navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EmployerSignupComponent,
     EmployerLoginComponent,
     EmployerNavbarComponent,
+    SearchResultsComponent,
 
   ],
   imports: [
