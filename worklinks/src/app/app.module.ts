@@ -16,8 +16,6 @@ import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeke
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-
-
 import { SlidesComponent } from './slides/slides.component';
 import { RegisterJobseekerComponent } from './register-jobseeker/register-jobseeker.component';
 import { LoginJobseekerComponent } from './login-jobseeker/login-jobseeker.component';
