@@ -25,6 +25,12 @@ export class EmployerSignupComponent implements OnInit {
     password2 : ["",Validators.required],
   })
 
+  mpesaForm = this.fb.group({
+    phone : ["",Validators.required],
+    amount : ["",Validators.required],
+    paymentMethod : ["",Validators.required],
+  })
+
   get email(){return this.registerForm.get('email')}
   get password1(){return this.registerForm.get('password1')}
   get password2(){return this.registerForm.get('password2')}
@@ -38,5 +44,6 @@ export class EmployerSignupComponent implements OnInit {
   }
   onSubmit(){
     console.log(this.registerForm.value);
+    console.log(this.mpesaForm.value);
   }
 }

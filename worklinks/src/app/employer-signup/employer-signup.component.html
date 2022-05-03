@@ -47,12 +47,50 @@
           </div>
           <!-- <p>Form status: {{registerForm.status}}</p> -->
           <div>
-            <button type="submit" class="btn btn-pri">Back</button>
-            <button type="submit" class="btn btn-sec">Get recruiter access</button>
+            <button type="submit" class="btn btn-pri" routerLink="/">Back</button>
+            <button type="submit" class="btn btn-sec"data-bs-toggle="modal" data-bs-target="#exampleModal">Get recruiter access</button>
+          </div>  
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel">Payment procedure</h6>
+                <ul>
+                  <li>Enter your mpesa number</li>
+                  <li>Submit the form and wait for a prompt on your phone</li>
+                  <li>Enter your mpesa pin and press okay to send</li>
+                </ul>
+              </div>
+              <div class="modal-body">
+                <form [formGroup]="mpesaForm" action="" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label for="Phone">Phone number:</label>
+                      <input type="text" class="form-control" id="phone" placeholder="phone number" formControlName="phone">
+                    </div>
+                    <div class="form-group">
+                      <label for="Payment method">Payment method:</label>
+                      <input type="text" class="form-control" id="paymentMethod" placeholder="Payment method" formControlName="paymentMethod">
+                    </div>
+                    <div class="form-group">
+                      <label for="Amount">Amount:</label>
+                      <input type="text" class="form-control" id="amount" placeholder="5000 KES" formControlName="amount">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sec" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-pri">Make payment</button>
+              </div>
+            </div>
           </div>
         </div>
       </form>
-      
+      <div>
+        <p>Have an account?<a class="nav-item nav-link" routerLink="/employer/login">Sign in</a></p>
+      </div>
     </div>
   </div>
 </div>
