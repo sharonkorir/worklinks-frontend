@@ -20,6 +20,10 @@ import { SlidesComponent } from './slides/slides.component';
 import { RegisterJobseekerComponent } from './register-jobseeker/register-jobseeker.component';
 import { LoginJobseekerComponent } from './login-jobseeker/login-jobseeker.component';
 import { ApplicantsComponent } from './applicants/applicants.component';
+import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EmployerLoginComponent } from './employer-login/employer-login.component';
+import { EmployerNavbarComponent } from './employer-navbar/employer-navbar.component';
 
 @NgModule({
   declarations: [
@@ -39,13 +43,17 @@ import { ApplicantsComponent } from './applicants/applicants.component';
     SlidesComponent,
     RegisterJobseekerComponent,
     LoginJobseekerComponent,
-    ApplicantsComponent
+    ApplicantsComponent,
+    EmployerSignupComponent,
+    EmployerLoginComponent,
+    EmployerNavbarComponent
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

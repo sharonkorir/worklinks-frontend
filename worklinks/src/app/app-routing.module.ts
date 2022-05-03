@@ -9,6 +9,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RegisterJobseekerComponent } from './register-jobseeker/register-jobseeker.component';
 import { LoginJobseekerComponent } from './login-jobseeker/login-jobseeker.component';
 import { ApplicantsComponent } from './applicants/applicants.component';
+import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
+import { EmployerLoginComponent } from './employer-login/employer-login.component';
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
   {
@@ -36,6 +38,11 @@ path:'recruiter-dashboard',component:RecruiterDashboardComponent
   {path: 'jobseeker/login', component: LoginJobseekerComponent},
   {path: 'applicants/applicants', component: ApplicantsComponent},
 
+
+
+
+  { path: 'register', component: EmployerSignupComponent},
+  { path: 'login', component: EmployerLoginComponent},
 ];
 
 @NgModule({

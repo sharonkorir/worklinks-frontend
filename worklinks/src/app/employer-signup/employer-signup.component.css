@@ -1,0 +1,11 @@
+.error{
+  color: red;
+}
+
+form{
+  background-color:white;
+  border: solid rgb(32, 34, 32) 1px;
+  border-radius: 20px 20px 20px 20px;
+  padding: 60px;
+  width: 100%;
+}
