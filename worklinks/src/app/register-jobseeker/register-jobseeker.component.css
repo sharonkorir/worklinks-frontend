@@ -1,0 +1,127 @@
+nav{
+    /*text-align: center; */
+    font-size: 25px;
+    background-color:#49224A;
+    color: cornsilk;
+  }
+.navbar-brand{
+    color: white;
+    font: bold;
+    padding-left: 40px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size:40px;
+}
+#loginb{
+    background-color: #49224A;
+    border-color: white;
+    margin-right: 10px;
+    color: white;
+}
+#signb{
+   background-color: white;
+   color: #49224A;
+   margin-right: 16px;
+}
+.buttn{
+    margin-left: 700px;
+}
+.jobse{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.comp{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=number] {
+  width: 65%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-color: rgb(32, 34, 32);
+  border-width: 0.1px;
+  box-shadow: 0px 0px 0px 0px ;
+  border-radius: 10px 10px 10px 10px;
+  background: white;
+  margin-left: 100px;
+}
+#regform{
+    align-items: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color:white;
+  border-color: rgb(32, 34, 32);
+  border-width: 1px;
+  box-shadow: 0px 0px 0px 1px ;
+  border-radius: 20px 20px 20px 20px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+signupbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.signupbtn {
+    float: left;
+    width: 20%;
+    color: white;
+    background-color: #E2AA2E;
+    border: none;
+    border-radius: 10px ;
+    padding: 10px;
+    margin-left: 180px;
+
+  }
+  .container {
+    background-color:white;
+    width: 500px;
+    height: 700px;
+    border-color: rgb(32, 34, 32);
+    border-width: 2px;
+    box-shadow: 0px 0px 0px 1px ;
+    border-radius: 20px 20px 20px 20px;
+    padding-top: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .head{
+      text-align: center;
+      
+  }
+label{
+    margin-left: 40px;
+}
+   
