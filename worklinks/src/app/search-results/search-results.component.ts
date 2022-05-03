@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SearchService } from '../services/search.service';
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
@@ -9,6 +11,8 @@ import { SearchService } from '../services/search.service';
 export class SearchResultsComponent implements OnInit {
 
   searchTerm = '';
+  results: any[] = [];
+  count = 0;
 
   constructor(
     private searchService: SearchService
@@ -16,6 +20,17 @@ export class SearchResultsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.searchService.getPassedResults()
+      .subscribe(
+        (response:any) => {
+          this.results = response.results;
+          this.count = response.count;
+          console.log('Results', this.results, this.count)
+        },
+        (error:any) =>{
+          console.log('Error occured', error)
+        }
+      )
   }
 
   searchJobseekers(): void {
@@ -24,7 +39,8 @@ export class SearchResultsComponent implements OnInit {
     this.searchService.getResults(this.searchTerm)
     .subscribe(
       (response: any) =>{
-        console.log ('Data - ', response);
+        // console.log ('Data - ', response);
+        this.searchService.passResults({results:response.value, count:response.totalCount})
       },
       (error: any) => {
         console.log('error occured', error);
