@@ -13,6 +13,12 @@ import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-das
 import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
 
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+
+
+import { SlidesComponent } from './slides/slides.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,12 @@ import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeke
     RecruiterNavbarComponent,
     RecruiterDashboardComponent,
     PostJobFormComponent,
-    JobseekerProfilePageComponent
+    JobseekerProfilePageComponent,
+    NavigationBarComponent,
+    LandingPageComponent,
+    TestimonialsComponent,
+    FooterComponent,
+    SlidesComponent
   ],
   imports: [
     HttpClientModule,

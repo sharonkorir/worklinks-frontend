@@ -21,6 +21,11 @@
     "@cloudinary/angular-5.x": "^1.5.2",
     "component-emitter": "github:component/emitter",
     "ng2-file-upload": "^1.4.0",
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "angular-font-awesome": "^3.1.2",
+    "font-awesome": "^4.7.0",
+    "mdb-angular-ui-kit": "^2.1.0",
+    "momentum-slider": "^0.0.8",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
