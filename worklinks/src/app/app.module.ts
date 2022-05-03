@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -12,7 +12,7 @@ import { RecruiterNavbarComponent } from './recruiter-navbar/recruiter-navbar.co
 import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-dashboard.component';
 import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
-
+import { FormBuilder } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,9 +30,12 @@ import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeke
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    FormBuilder,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,7 +4,7 @@
     <br>
     <br>
 
-    <form>
+    <form [formGroup]='form' (ngsubmit)="submit()">
         <h4>Company Information</h4>
 
         <hr>
@@ -12,31 +12,27 @@
 
             <label for="name">Job-title</label>
 
-            <input type="text" required class="form-control" id="name">
+            <input formControlName="title" type="text" required class="form-control" id="name">
 
         </div>
 
         <div class="form-group">
 
             <label for="name">Location</label>
-            <input type="text" required class="form-control" id="name">
+            <input formControlName="location" type="text" required class="form-control" id="name">
 
         </div>
 
 
-        <div class="form-group">
 
-            <label for="name">Website</label>
-            <input type="text" required class="form-control" id="name">
-
-        </div>
         <br>
         <div class="form-group">
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Job-Type</label>
-                <select class="form-select" id="inputGroupSelect01">
+                <select formControlName="jobtype" class="form-select" id="inputGroupSelect01">
                     <option selected>Choose...</option>
       <option value="Full-Time">Full-Time</option>
+      <option value="Full-Time">Remote</option>
       <option value="Part-Time">Part-Time</option>
       
       
@@ -56,13 +52,13 @@
         <div class="form-group">
 
             <label for="description">Requirements</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
+            <textarea formControlName="requirements" class="form-control" id="description" rows="4" required></textarea>
 
         </div>
         <br>
         <br>
         <div class="btn">
-            <button type="submit" class="btn btn-success">Post Job</button>
+            <button type="submit" class="btn btn-primary">Post Job</button>
 
         </div>
     </form>
