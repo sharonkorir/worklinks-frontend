@@ -5,9 +5,10 @@ import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-das
 import { RecruiterProfileComponent } from './recruiter-profile/recruiter-profile.component';
 import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 const routes: Routes = [
   {
-    path:'',component:ProfileComponent
+    path:'',component:LandingPageComponent
   },
   {
     path:'recruiter-profile',component:RecruiterProfileComponent,
