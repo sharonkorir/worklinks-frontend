@@ -1,0 +1,39 @@
+form .form-group {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green;
+    padding: 10px; */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    /* outline: none; */
+}
+
+.form-group label {
+    color: #49224A;
+}
+
+.input-group label {
+    color: #49224A;
+}
+
+.input-group option {
+    color: #49224A;
+}
+
+h4,
+h2 {
+    color: #E2AA2E;
+}
