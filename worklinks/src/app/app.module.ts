@@ -19,6 +19,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 import { SlidesComponent } from './slides/slides.component';
+import { RegisterJobseekerComponent } from './register-jobseeker/register-jobseeker.component';
+import { LoginJobseekerComponent } from './login-jobseeker/login-jobseeker.component';
+import { ApplicantsComponent } from './applicants/applicants.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { SlidesComponent } from './slides/slides.component';
     LandingPageComponent,
     TestimonialsComponent,
     FooterComponent,
-    SlidesComponent
+    SlidesComponent,
+    RegisterJobseekerComponent,
+    LoginJobseekerComponent,
+    ApplicantsComponent
   ],
   imports: [
     HttpClientModule,
