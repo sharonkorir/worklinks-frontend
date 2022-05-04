@@ -373,6 +373,11 @@ body {
     max-width: 80em;
     color: #020407;
 }
+#pwrapper{
+  text-align: center;
+  color: black;
+  font-weight: 900;
+}
 
 #container {
     display: flex;
