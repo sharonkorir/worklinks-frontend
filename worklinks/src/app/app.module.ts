@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import {HttpClientModule } from '@angular/common/http';
+
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -12,6 +12,23 @@ import { RecruiterNavbarComponent } from './recruiter-navbar/recruiter-navbar.co
 import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-dashboard.component';
 import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
+
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { SlidesComponent } from './slides/slides.component';
+import { RegisterJobseekerComponent } from './register-jobseeker/register-jobseeker.component';
+import { LoginJobseekerComponent } from './login-jobseeker/login-jobseeker.component';
+import { ApplicantsComponent } from './applicants/applicants.component';
+import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EmployerLoginComponent } from './employer-login/employer-login.component';
+import { EmployerNavbarComponent } from './employer-navbar/employer-navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,13 +41,33 @@ import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeke
     RecruiterNavbarComponent,
     RecruiterDashboardComponent,
     PostJobFormComponent,
-    JobseekerProfilePageComponent
+    JobseekerProfilePageComponent,
+    NavigationBarComponent,
+    LandingPageComponent,
+    TestimonialsComponent,
+    FooterComponent,
+    SlidesComponent,
+    RegisterJobseekerComponent,
+    LoginJobseekerComponent,
+    ApplicantsComponent,
+    EmployerSignupComponent,
+    EmployerLoginComponent,
+    EmployerNavbarComponent,
+    SearchResultsComponent,
+    
+
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatIconModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
