@@ -8,7 +8,7 @@ form{
   border-radius: 20px 20px 20px 20px;
   padding: 60px;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 200px;
   align-items: center;
 }
 
@@ -17,10 +17,30 @@ form{
   color: white;
   margin-top: 20px;
 }
+#ebtn{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+}
+
 
 .btn-sec{
   background-color: white;
   color: #E2AA2E;
   border: solid #E2AA2E 1px;
   margin-top: 20px;
+  margin-left: 100px;
+}
+input[type=text], input[type=password], input[type=number],input[type=email] {
+  width: 65%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-color: rgb(32, 34, 32);
+  border-width: 0.1px;
+  box-shadow: 0px 0px 0px 0px ;
+  border-radius: 10px 10px 10px 10px;
+  background: white;
+  margin-left: 100px;
 }

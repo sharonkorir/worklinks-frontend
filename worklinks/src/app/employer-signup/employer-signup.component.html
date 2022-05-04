@@ -5,34 +5,35 @@
       
       <form [formGroup]="registerForm" action="" (ngSubmit)="onSubmit()" id="form">
         <div class="text-center">
-          <p>Sign up and start recruiting</p>
+          <h1>Register</h1>
+          <p>Create an account and start <br> recruiting </p>
         </div>
         <div class="form-group">
           <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email" required>
+            <label for="email">Email address:</label><br>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email" required><br>
             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             <span class="error" *ngIf="email?.invalid && email?.touched">this field is required</span>
           
           </div>
           <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username" placeholder="Username:" formControlName="username"required>
+            <label for="username">Username:</label><br>
+            <input type="text" class="form-control" id="username" placeholder="Username:" formControlName="username"required><br>
             <span class="error" *ngIf="username?.invalid && username?.touched">this field is required</span>
           </div>
           <div class="form-group">
-            <label for="company-name">Company name:</label>
-            <input type="text" class="form-control" id="company-name" placeholder="Company name:" formControlName="companyName" required>
+            <label for="company-name">Company name:</label><br>
+            <input type="text" class="form-control" id="company-name" placeholder="Company name:" formControlName="companyName" required><br>
             <span class="error" *ngIf="companyName?.invalid && companyName?.touched">this field is required</span>
           </div>
           <div class="form-group">
-            <label for="Phone">Phone number:</label>
-            <input type="text" class="form-control" id="phone" placeholder="phone number" formControlName="phone" required>
+            <label for="Phone">Phone number:</label><br>
+            <input type="text" class="form-control" id="phone" placeholder="phone number" formControlName="phone" required><br>
             <span class="error" *ngIf="phone?.invalid && phone?.touched">this field is required</span>
           </div>
           <div class="form-group">
-            <label for="Password1">Password:</label>
-            <input type="password" class="form-control" id="Password1" placeholder="Password" formControlName="password1" required>
+            <label for="Password1">Password:</label><br>
+            <input type="password" class="form-control" id="Password1" placeholder="Password" formControlName="password1" required><br>
             <!-- <div id="passwordHelpBlock" class="form-text">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
             </div> -->
@@ -40,10 +41,10 @@
           </div>
           <div class="form-group">
             <label for="Password2">Confirm password</label>
-            <input type="password" class="form-control" id="Password2" placeholder="Confirm password" formControlName="password2" required>
-            <div id="passwordHelpBlock" class="form-text">
+            <input type="password" class="form-control" id="Password2" placeholder="Confirm password" formControlName="password2" required><br>
+            <!-- <div id="passwordHelpBlock" class="form-text">
               Your password must match
-            </div>
+            </div> -->
             <span class="error" *ngIf="password2?.invalid && password2?.touched">this field is required</span>
           </div>
           <!-- <p>Form status: {{registerForm.status}}</p> -->
@@ -94,7 +95,7 @@
         </div>
       </form>
       <div>
-        <p>Have an account?<a class="nav-item nav-link" routerLink="/employer/login">Sign in</a></p>
+        <p>Have an account?<button class="nav-item nav-link" id="ebtn" routerLink="/employer/login">Sign in</button></p>
       </div>
     </div>
   </div>
