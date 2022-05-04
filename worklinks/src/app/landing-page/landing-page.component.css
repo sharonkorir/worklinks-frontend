@@ -93,7 +93,7 @@ margin-left: 2rem;
    width:90%;
    margin:auto;
    padding:5% 5%;
-   over-flow:hidden;
+   overflow:hidden;
 }
 .team h1{
    text-align:center;
@@ -216,13 +216,15 @@ footer p{
    }
 }
 
-#finya2{
+/* #finya2{
    font-family:'Big Shoulders Stencil Text', cursive;
    margin-left: 2rem;
    background-color: white;
    color: orange;
-}
-
+} */
+ #finya{
+    margin-left: 8rem;
+ }
 #picpic{
    margin-left: 40rem;
    height: 18rem;
