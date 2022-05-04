@@ -258,8 +258,8 @@ ul {
    font-size: 4rem;
    /* font-family:'Big Shoulders Stencil Text', cursive; */
  }
- 
- #butt{
+
+#butt{
    margin-left: 50rem;
    flex: 1;
    background-color: white;
@@ -271,9 +271,10 @@ ul {
   color: white;
   font-family:'Big Shoulders Stencil Text', cursive;
  }
- /* .topic09{
-  /* font-family:'Big Shoulders Stencil Text', cursive; 
- } */
+ .topic09{
+  color: black;
+  
+ }
 
 
  /* members */
