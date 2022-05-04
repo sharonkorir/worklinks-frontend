@@ -38,3 +38,9 @@ input[type=text], input[type=password], input[type=number],input[type=email] {
   background: white;
   margin-left: 100px;
 }
+#ebtn{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+}
