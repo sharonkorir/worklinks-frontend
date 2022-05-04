@@ -19,10 +19,10 @@
         </div>
 
     </div>
-    <div class="row gx-5 ">
+    <div *ngFor="let job of Job" class="row gx-5  ">
         <div class="jobs col-md-6">
             <div class="p-3 border">
-                <h3>Job Title</h3>
+                <h3>{{job.title}}</h3>
                 <div class="sub-head top">
                     <p><i class="fa fa-briefcase" aria-hidden="true"></i>Full-Time</p>
                     <p><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</p>
