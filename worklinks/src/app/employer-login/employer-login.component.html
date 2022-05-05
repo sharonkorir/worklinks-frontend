@@ -1,15 +1,29 @@
-<app-navigation-bar></app-navigation-bar>
+<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="#">Worklinks</a>
+    </div>
+  <div class="buttn" id="pages">
+      <a href="#" class="jobse" > For job seekers</a>
+      <a href="#" class="comp" routerLink="register"> For employers</a>
+      <button class="btn " id="signb" routerLink="/jobseeker/register">Sign Up</button>
+      <button class="btn " id="loginb" routerLink="/jobseeker/login">Login</button>
+  </div>
+</nav>
 <div class="container">
   <div class="row">
     <div class="col-sm-6 offset-3">
       <div class="text-center">
-        <h5>Sign in and browse our job seekers</h5>
+        
       </div>
       <form [formGroup]="loginForm" action="" (ngSubmit)="onSubmit()">
+        <div class="head">
+          <h1>Login</h1>
+          <p>Create an account and start <br> recruiting </p>
+        </div>
         <div class="form-group">
           <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+            <label for="email">Email address:</label><br>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="email"><br>
             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
             <span class="error" *ngIf="email?.invalid && email?.touched">this field is required</span>
           </div>
@@ -22,8 +36,8 @@
             <input type="text" class="form-control" id="phone" placeholder="phone number" formControlName="phone">
           </div> -->
           <div class="form-group">
-            <label for="Password1">Password:</label>
-            <input type="password" class="form-control" id="Password1" placeholder="Password" formControlName="password1">
+            <label for="Password1">Password:</label><br>
+            <input type="password" class="form-control" id="Password1" placeholder="Password" formControlName="password1"><br>
             <span class="error" *ngIf="password1?.invalid && password1?.touched">this field is required</span>
             <!-- <div id="passwordHelpBlock" class="form-text">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
@@ -39,12 +53,12 @@
           </div> -->
           <div>
             <!-- <button type="submit" class="btn btn-primary">Back</button> -->
-            <button type="submit" class="btn btn-pri">Sign In</button>
+            <button type="submit" class="btn btn-pri" style="margin-left: 220px;">Login</button>
           </div>
         </div>
       </form>
       <div>
-        <p>Don't have an account?<a class="nav-item nav-link" routerLink="/employer/register">Sign up</a></p>
+        <p>Don't have an account?<button class="nav-item nav-link" id="ebtn" routerLink="/employer/register">Sign up</button></p>
       </div>
       <p></p>
       <div class="row"></div>
