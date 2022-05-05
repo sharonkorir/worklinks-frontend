@@ -8,19 +8,22 @@
 
 
         </div>
-        <div class="form">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search Job Seeker" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+
+        <div class="form-group post-job">
+
+            <input type="text" class="form-control mb-4" placeholder="Search " [(ngModel)]="searchFilter" id="listSearch">
+
         </div>
+
+
         <div class="post-job">
             <a href="/post-job"> <button class="btn btn-outline-success" type="submit">Post Job</button></a>
         </div>
 
     </div>
     <div class="row gx-5  ">
-        <div class="jobs col-md-6" *ngFor="let job of jobs">
+        <div class="jobs col-md-6" *ngFor="let job of jobs| searchFilter: searchFilter">
             <div class="p-3 border">
                 <h3>{{job.title}}</h3>
                 <div class="sub-head top">
@@ -36,53 +39,5 @@
             </div>
         </div>
 
-        <!-- <div class="jobs col-md-6">
-            <div class="p-3 border">
-                <h3>Job Title</h3>
-                <div class="sub-head top">
-                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>Full-Time</p>
-                    <p><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</p>
-                </div>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec dui nunc mattis enim ut tellus </p>
-                <div class="sub-head top">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><small> Moringa School Kenya<br> Ngong Rd</small></p>
-                    <p><i class="fa fa-trash-o" aria-hidden="true"></i></p>
-                </div>
-            </div>
-        </div> -->
-    </div>
-    <!-- <div class="row gx-5 ">
-        <div class="jobs col-md-6">
-            <div class="p-3 border">
-                <h3>Job Title</h3>
-                <div class="sub-head top">
-                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>Full-Time</p>
-                    <p><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</p>
-                </div>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec dui nunc mattis enim ut tellus </p>
-                <div class="sub-head top">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><small> Moringa School Kenya<br> Ngong Rd</small></p>
-                    <p><i class="fa fa-trash-o" aria-hidden="true"></i></p>
-                </div>
-            </div>
-        </div>
 
-        <div class="jobs col-md-6">
-            <div class="p-3 border">
-                <h3>Job Title</h3>
-                <div class="sub-head top ">
-                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>Full-Time</p>
-                    <p><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</p>
-                </div>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec dui nunc mattis enim ut tellus </p>
-                <div class="sub-head top">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><small> Moringa School Kenya<br> Ngong Rd</small></p>
-                    <p><i class="fa fa-trash-o" aria-hidden="true"></i></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-</div>
+    </div>

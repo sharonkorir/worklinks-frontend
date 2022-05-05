@@ -13,6 +13,7 @@ import { RecruiterDashboardComponent } from './recruiter-dashboard/recruiter-das
 import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
 import { FormBuilder } from '@angular/forms';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormBuilder } from '@angular/forms';
     RecruiterNavbarComponent,
     RecruiterDashboardComponent,
     PostJobFormComponent,
-    JobseekerProfilePageComponent
+    JobseekerProfilePageComponent,
+    SearchFilterPipe
   ],
   imports: [
     HttpClientModule,

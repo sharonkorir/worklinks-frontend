@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import * as Emitter from 'component-emitter';
 import TypedEmitter from "typed-emitter";
+import { SearchFilterPipe } from '../search-filter.pipe';
 
 
 export class Job{
@@ -21,6 +22,8 @@ export class Job{
   styleUrls: ['./recruiter-dashboard.component.css']
 })
 export class RecruiterDashboardComponent implements OnInit {
+ public searchFilter: any = '';
+
  jobs!: Job[];
     
   constructor(
