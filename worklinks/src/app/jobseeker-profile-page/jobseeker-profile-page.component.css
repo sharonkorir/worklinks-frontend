@@ -1,71 +1,79 @@
 .navbar {
-    background-color: #49224A;
+  background-color: #49224A;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .btn {
-    background-color: #E2AA2E;
+  background-color: #E2AA2E;
 }
 
 .prof {
-    display: flex;
-    margin: auto;
-    width: 50%;
-    justify-content: space-between;
-    margin-top: 3rem;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
 
 span {
-    color: #E2AA2E;
+  color: #E2AA2E;
 }
 
 h5 {
-    color: #49224A;
+  color: #49224A;
 }
 
 .info {
-    margin-left: 10rem;
+  margin-left: 10rem;
 }
 
 .bio {
-    margin: auto;
-    width: 90%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-.fas {
-    font-size: 100px;
-    color: #E2AA2E;
+#profile {
+  font-size: 100px;
+  color: #E2AA2E;
 }
 
 .p-3 {
-    border-radius: 20px;
-    color: #49224A;
-    box-shadow: 2px 2px 2px#49224A;
+  border-radius: 20px;
+  color: #49224A;
+  box-shadow: 2px 2px 2px #49224A;
 }
 
 .bi {
-    padding: 1.5rem;
-    border-radius: 20px;
-    margin-left: 5rem;
-    width: 70%;
-    color: #49224A;
-    box-shadow: 2px 2px 2px#49224A;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-left: 5rem;
+  width: 70%;
+  color: #49224A;
+  box-shadow: 2px 2px 2px #49224A;
 }
 
 h3 {
-    color: #E2AA2E;
+  color: #E2AA2E;
 }
 
 .dropdown-menu {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .dropdown-menu li a {
-    color: #49224A;
+  color: #49224A;
 }
+
+.btn-sec{
+  background-color: #49224A;
+  color: white;
+  border: solid white 1px;
+  
+}
+

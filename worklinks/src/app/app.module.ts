@@ -30,6 +30,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { EmployerLandingComponent } from './employer-landing/employer-landing.co
     EmployerNavbarComponent,
     SearchResultsComponent,
     EmployerLandingComponent,
+    SearchFilterPipe,
     
 
   ],

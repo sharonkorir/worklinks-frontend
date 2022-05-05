@@ -15,7 +15,7 @@ export class PostJobFormComponent implements OnInit {
    
   ) { }
   onSubmit(data: any){
-    this.http.post('http://127.0.0.1:8000/api/Job/',data)
+    this.http.post('http://worklinks.herokuapp.com/api/Job/',data)
     .subscribe((results) =>{
       console.warn('results',results)
     })
