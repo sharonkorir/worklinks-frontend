@@ -1,3 +1,41 @@
+nav{
+  /*text-align: center; */
+  font-size: 25px;
+  background-color:#49224A;
+  color: cornsilk;
+}
+.navbar-brand{
+  color: white;
+  font: bold;
+  padding-left: 40px;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size:40px;
+}
+#loginb{
+  background-color: #49224A;
+  border-color: white;
+  margin-right: 10px;
+  color: white;
+}
+#signb{
+ background-color: white;
+ color: #49224A;
+ margin-right: 16px;
+}
+.buttn{
+  margin-left: 700px;
+}
+.jobse{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  
+}
+.comp{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
 .error{
   color: red;
 }
