@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <!--search form start-->
+    <div class="col">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="search jobseekers..." [(ngModel)]="searchTerm">
+        
+      </div>
+      <div class="input-group-append">
+        <button type="button" class="btn btn-pri" (click)="searchJobseekers()">Search<em class="fa fa-search"></em></button>
+      </div>
+    </div>
+    <!--search form end-->
+  </div>
+  <div class="results">
+    <p>{{count}} results</p>
+    <div class="result" *ngFor="let result of results">
+      <a href="" class="title">
+        <h4>
+          {{result.name}}
+        </h4>
+      </a>
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos harum dicta, illo ipsa voluptatum fuga veritatis neque aliquid reiciendis, minus corporis nulla quos? Dicta cum accusamus, obcaecati quod et perspiciatis.</p> -->
+      {{result.bio}}
+    </div>
+  </div>
+</div>
