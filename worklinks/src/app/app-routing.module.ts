@@ -12,6 +12,8 @@ import { ApplicantsComponent } from './applicants/applicants.component';
 import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
+
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
   {
@@ -19,10 +21,14 @@ const routes: Routes = [
     
   },
   {
+    path:'employer-landing',component:EmployerLandingComponent
+    
+  },
+  {
     path:'recruiter-profile',component:RecruiterProfileComponent,
   },
   {
-path:'recruiter-dashboard',component:RecruiterDashboardComponent
+    path:'recruiter-dashboard',component:RecruiterDashboardComponent
   },
   {
     path:'post-job',component:PostJobFormComponent
