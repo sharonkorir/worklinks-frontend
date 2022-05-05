@@ -13,6 +13,8 @@
 
   .toolbar {
     position: fixed;
+    display: inline-flex;
+    Z-index:2;
     width: 100%;
     /* font-family: 'Big Shoulders Stencil Text', cursive; */
 
