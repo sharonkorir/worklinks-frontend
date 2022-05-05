@@ -21,3 +21,11 @@
 .btn {
     background-color: #E2AA2E;
 }
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.dropdown-menu li a {
+    color: #49224A;
+}

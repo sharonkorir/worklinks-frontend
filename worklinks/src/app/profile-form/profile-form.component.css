@@ -9,6 +9,10 @@ form .form-group {
     margin: 30px 0;
 }
 
+.btn {
+    background-color: #E2AA2E;
+}
+
 .form-group input {
     width: 100%;
     padding: 0 5px;

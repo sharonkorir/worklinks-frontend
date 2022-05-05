@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-post-job-form',
   templateUrl: './post-job-form.component.html',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostJobFormComponent implements OnInit {
 
-  constructor() { }
 
+  constructor(
+    private http:HttpClient
+   
+  ) { }
+  onSubmit(data: any){
+    this.http.post('http://127.0.0.1:8000/api/Job/',data)
+    .subscribe((results) =>{
+      console.warn('results',results)
+    })
+    console.log(data);
+    
+     }
   ngOnInit(): void {
+  
   }
-
 }
