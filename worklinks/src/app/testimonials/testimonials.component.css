@@ -343,11 +343,13 @@ body {
 }
 
 .name {
-    font-size: 14px
+    font-size: 14px;
+    margin-left:-9rem;
 }
 
 .designation {
-    font-size: 10px
+    font-size: 10px;
+    margin-left:-9rem;
 }
 
 
