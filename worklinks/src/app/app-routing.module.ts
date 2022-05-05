@@ -7,7 +7,7 @@ import { PostJobFormComponent } from './post-job-form/post-job-form.component';
 import { JobseekerProfilePageComponent } from './jobseeker-profile-page/jobseeker-profile-page.component';
 const routes: Routes = [
   {
-    path:'',component:ProfileComponent
+    path:'jobseeker-profile',component:ProfileComponent
   },
   {
     path:'recruiter-profile',component:RecruiterProfileComponent,
