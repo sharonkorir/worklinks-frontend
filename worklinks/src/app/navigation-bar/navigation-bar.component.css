@@ -11,13 +11,10 @@
   flex: 1;
 }
 
-
-  .toolbar {
-    position: fixed;
-    display: inline-flex;
-    Z-index:2;
-    width: 100%;
-
+.toolbar {
+  position: fixed;
+  width: 100%;
+  /* font-family: 'Big Shoulders Stencil Text', cursive; */
 
   overflow: hidden;
   top: 0;
