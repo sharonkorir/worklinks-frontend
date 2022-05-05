@@ -12,7 +12,12 @@ form{
   align-items: center;
 }
 
-.btn-pri{
+#sb{
+  background-color: #E2AA2E;
+  color: white;
+  margin-top: 20px;
+}
+#msub{
   background-color: #E2AA2E;
   color: white;
   margin-top: 20px;
@@ -25,12 +30,19 @@ form{
 }
 
 
-.btn-sec{
+#sn{
   background-color: white;
   color: #E2AA2E;
   border: solid #E2AA2E 1px;
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 320px;
+}
+#mclo{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 input[type=text], input[type=password], input[type=number],input[type=email] {
   width: 65%;
@@ -69,7 +81,7 @@ nav{
  margin-right: 16px;
 }
 .buttn{
-  margin-left: 700px;
+  margin-left: 1000px;
 }
 .jobse{
   color: white;
@@ -81,4 +93,7 @@ nav{
   color: white;
   text-decoration: none;
   margin-right: 20px;
+}
+.modal-body{
+  margin-top: -200px;
 }
