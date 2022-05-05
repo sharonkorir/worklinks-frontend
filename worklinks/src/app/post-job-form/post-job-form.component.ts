@@ -8,29 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./post-job-form.component.css']
 })
 export class PostJobFormComponent implements OnInit {
-  form!:FormGroup;
+
 
   constructor(
-    private formBuilder:FormBuilder,
-    private http:HttpClient,
-    private router:Router,
+    private http:HttpClient
+   
   ) { }
-
-  ngOnInit(): void {
-    this.form =this.formBuilder.group({
-      title:'',
-      requirements:'',
-      location:'',
-      jobtype:'',
-      
+  onSubmit(data: any){
+    this.http.post('http://127.0.0.1:8000/api/Job/',data)
+    .subscribe((results) =>{
+      console.warn('results',results)
     })
+    console.log(data);
+    
+     }
+  ngOnInit(): void {
+  
   }
-submit():void{
-  console.log(this.form.getRawValue());
-  this.http.post('http://127.0.0.1:8000/api/Job/',this.form.getRawValue())
-  subscribe(() => this.router.navigate(['recruiter-dashboard']));
-}
-}
-function subscribe(arg0: () => Promise<boolean>) {
-  throw new Error('Function not implemented.');
 }
