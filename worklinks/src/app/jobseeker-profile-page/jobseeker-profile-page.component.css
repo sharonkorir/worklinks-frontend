@@ -27,6 +27,10 @@ h5 {
     color: #49224A;
 }
 
+.info {
+    margin-left: 10rem;
+}
+
 .bio {
     margin: auto;
     width: 85%;
@@ -48,6 +52,7 @@ h5 {
 .bi {
     padding: 1.5rem;
     border-radius: 20px;
+    margin-left: 5rem;
     width: 70%;
     color: #49224A;
     box-shadow: 2px 2px 2px#49224A;
