@@ -3,8 +3,7 @@
       <a class="navbar-brand" href="#">Worklinks</a>
     </div>
   <div class="buttn" id="pages">
-      <a href="#" class="jobse" > For job seekers</a>
-      <a href="#" class="comp" routerLink="register"> For employers</a>
+      <a href="#" class="comp" routerLink="/"> Home</a>
       <button class="btn " id="signb" routerLink="/employer/register">Sign Up</button>
       <button class="btn " id="loginb" routerLink="/employer/login">Login</button>
   </div>
@@ -59,8 +58,8 @@
           </div>
           <!-- <p>Form status: {{registerForm.status}}</p> -->
           <div>
-            <button type="submit" class="btn btn-pri" routerLink="/">Back</button>
-            <button type="submit" class="btn btn-sec"data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
+            <button type="submit" class="btn btn-pri" id="sb" routerLink="/">Back</button>
+            <button type="submit" id="sn" class="btn btn-sec"data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
           </div>  
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -94,8 +93,8 @@
                     <input type="text" id="disabledTextInput" class="form-control" placeholder="10,000 KES" formControlName="amount">
                   </fieldset>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-sec" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-pri">Submit</button>
+                    <button type="button" class="btn btn-sec" data-bs-dismiss="modal" id="mclo">Close</button>
+                    <button type="submit" class="btn btn-pri" id="msub">Submit</button>
                   </div>
                 </form>
               </div>
@@ -104,9 +103,6 @@
           </div>
         </div>
       </form>
-      <div>
-        <p>Have an account?<button class="nav-item nav-link" id="ebtn" routerLink="/employer/login">Sign in</button></p>
-      </div>
     </div>
   </div>
 </div>
