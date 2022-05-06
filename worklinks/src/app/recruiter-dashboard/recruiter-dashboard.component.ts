@@ -40,5 +40,5 @@ export class RecruiterDashboardComponent implements OnInit {
       }
     );
   }
-
+  
 }

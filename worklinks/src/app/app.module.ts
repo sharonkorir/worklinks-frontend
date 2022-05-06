@@ -29,6 +29,8 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchFilterPipe } from './search-filter.pipe';
+   
 
 
 @NgModule({
@@ -54,6 +56,7 @@ import { HttpClientModule } from '@angular/common/http';
     EmployerLoginComponent,
     EmployerNavbarComponent,
     SearchResultsComponent,
+    SearchFilterPipe
     
 
   ],
