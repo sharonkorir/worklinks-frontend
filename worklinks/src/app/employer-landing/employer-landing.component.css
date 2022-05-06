@@ -23,7 +23,7 @@ nav{
    margin-right: 16px;
   }
   .buttn{
-    margin-left: 750px;
+    margin-left: 180px;
   }
   .post{
     color: white;
@@ -38,4 +38,7 @@ nav{
   }
  #block1{
    margin-left: 15rem;
+ }
+ #search{
+   margin-left: 6rem;
  }
