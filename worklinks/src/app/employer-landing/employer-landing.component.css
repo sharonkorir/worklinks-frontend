@@ -1,0 +1,41 @@
+nav{
+    /*text-align: center; */
+    font-size: 25px;
+    background-color:#49224A;
+    color: cornsilk;
+  }
+  .navbar-brand{
+    color: white;
+    font: bold;
+    padding-left: 40px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size:40px;
+  }
+  #logoutb{
+    background-color: #49224A;
+    border-color: white;
+    margin-right: 10px;
+    color: white;
+  }
+  #signb{
+   background-color: white;
+   color: #49224A;
+   margin-right: 16px;
+  }
+  .buttn{
+    margin-left: 750px;
+  }
+  .post{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    
+  }
+  .home{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+ #block1{
+   margin-left: 15rem;
+ }
