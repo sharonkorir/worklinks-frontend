@@ -255,12 +255,11 @@ ul {
    text-align: center;
    text-transform: capitalize;
    color: black;
-   font-size: 4rem;
    /* font-family:'Big Shoulders Stencil Text', cursive; */
  }
-
-#butt{
-   margin-left: 50rem;
+ 
+ #butt{
+   margin-left: 45rem;
    flex: 1;
    background-color: white;
    font-weight: bolder;
@@ -271,10 +270,9 @@ ul {
   color: white;
   font-family:'Big Shoulders Stencil Text', cursive;
  }
- .topic09{
-  color: black;
-  
- }
+ /* .topic09{
+  /* font-family:'Big Shoulders Stencil Text', cursive; 
+ } */
 
 
  /* members */
@@ -343,13 +341,11 @@ body {
 }
 
 .name {
-    font-size: 14px;
-    margin-left:-9rem;
+    font-size: 14px
 }
 
 .designation {
-    font-size: 10px;
-    margin-left:-9rem;
+    font-size: 10px
 }
 
 
@@ -358,7 +354,7 @@ body {
 
 
 
-
+*,
 :before,
 :after {
     box-sizing: border-box;
@@ -375,14 +371,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 80em;
-    color: #020407;
-    z-index: auto;
-    
-}
-#pwrapper{
-  text-align: center;
-  color: black;
-  font-weight: 900;
 }
 
 #container {
@@ -393,8 +381,6 @@ body {
     min-height: 100vh;
     padding: 1em;
     width: 100%;
-    z-index: auto;
-     
 }
 
 h1 {
@@ -402,7 +388,6 @@ h1 {
     font-size: 5em;
     font-weight: 900;
     line-height: 1;
-  
 }
 
 h1:hover {
