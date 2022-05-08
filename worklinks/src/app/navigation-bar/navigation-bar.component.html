@@ -1,14 +1,16 @@
 
-<div class="toolbar" role="banner">
-  <!-- <img
-    width="40"
-    alt="Angular Logo"
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFHxkwPOuSKBdhm3Z1G-eu3OdwOlng_9aodtt-6jesm6q2dcp-VqSlL-qcZwKDElT3dM&usqp=CAU"
-  /> -->
-  
-  <span style="font-size: xx-large;font-family:'Big Shoulders Stencil Text', cursive;">Worklinks</span>
-  <a href="#"class="nav-item nav-link" routerLink="jobseeker/register">For Job seekers</a>
-  <a href="#" routerLink="/employer/register">For Companies</a>
-    <div class="spacer"></div>
-    <button class="btn " id="signb" routerLink="/jobseeker/register">Sign Up</button>
+
+<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="#">Worklinks</a>
+    </div>
+  <div class="buttn" id="pages">
+      <a href="#" class="jobse" routerLink="/jobseeker/register"> For job seekers</a>
+      <a href="#" class="comp" routerLink="/jobseeker/login"> For employers</a>
+      <button class="btn " id="signb" routerLink="/jobseeker/register">Sign Up</button>
       <button class="btn " id="loginb" routerLink="/jobseeker/login">Login</button>
+  </div>
+</nav>
+
+
+
