@@ -1,3 +1,4 @@
+import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
@@ -13,6 +14,7 @@ import { EmployerSignupComponent } from './employer-signup/employer-signup.compo
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
+
 
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
@@ -44,6 +46,8 @@ const routes: Routes = [
   {path: 'jobseeker/register', component: RegisterJobseekerComponent},
   {path: 'jobseeker/login', component: LoginJobseekerComponent},
   {path: 'applicants/applicants', component: ApplicantsComponent},
+  {path: 'job/application', component: JobapplicationpageComponent},
+
 
 
 
