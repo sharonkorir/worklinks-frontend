@@ -3,8 +3,7 @@ nav{
     font-size: 25px;
     background-color:#49224A;
     color: cornsilk;
-    margin-left: 10px;
-    margin-right: 10px;
+    
   }
 .navbar-brand{
     color: white;
@@ -25,7 +24,7 @@ nav{
    margin-right: 16px;
 }
 .buttn{
-    margin-left: 980px;
+    margin-left: 1000px;
 }
 .jobse{
     color: white;

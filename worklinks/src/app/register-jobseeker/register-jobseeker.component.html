@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">Worklinks</a>
       </div>
@@ -7,7 +7,8 @@
         <button class="btn " id="signb" routerLink="/jobseeker/register">Sign Up</button>
         <button class="btn " id="loginb" routerLink="/jobseeker/login">Login</button>
     </div>
-</nav>
+</nav> -->
+<app-navigation-bar></app-navigation-bar>
 <form action="/action_page.php" style="border:1px solid #ccc">
     <div class="container" id="regform">
         <div class="head">
@@ -35,7 +36,7 @@
       
   
       <div class="clearfix">
-        <button type="submit" class="signupbtn">Submit</button>
+        <button type="submit" class="signupbtn" routerLink="/jobseeker/login">Sign up</button>
       </div>
     </div>
   </form>

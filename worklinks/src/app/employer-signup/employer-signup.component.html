@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
   <div class="navbar-header">
       <a class="navbar-brand" href="#">Worklinks</a>
     </div>
@@ -7,7 +7,8 @@
       <button class="btn " id="signb" routerLink="/employer/register">Sign Up</button>
       <button class="btn " id="loginb" routerLink="/employer/login">Login</button>
   </div>
-</nav>
+</nav> -->
+<app-employer-navbar></app-employer-navbar>
 <div class="container">
   <div class="row">
     <div class="col-sm-6 offset-3">
@@ -94,7 +95,7 @@
                   </fieldset>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-sec" data-bs-dismiss="modal" id="mclo">Close</button>
-                    <button type="submit" class="btn btn-pri" id="msub">Submit</button>
+                    <button type="submit" class="btn btn-pri" id="msub" routerLink="/recruiter-profile">Submit</button>
                   </div>
                 </form>
               </div>

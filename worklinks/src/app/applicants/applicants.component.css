@@ -121,12 +121,12 @@ form.example input[type=text] {
 .applicantf{
     background-color:white;
     height: 400px;
-    width: 1000px;
+    /* width: 1000px; */
     border-color: rgb(32, 34, 32);
     border-width: 1px;
     box-shadow: 0px 0px 0px 1px ;
     border-radius: 20px 20px 20px 20px;
-    margin-left: 240px;
+    /* margin-left: 240px; */
     padding: 10px;
     margin-bottom: 50px;
 }
@@ -154,3 +154,96 @@ form.example input[type=text] {
     margin-top: -150px;
     margin-left: -100px;
 }
+
+.container{
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-job {
+  margin-top: 4rem;
+}
+
+.prof {
+  display: flex;
+  /* margin: auto;
+  width: 50%; */
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+span {
+  color: #E2AA2E;
+}
+
+h5 {
+  color: #49224A;
+}
+
+.info {
+  margin-left: 10rem;
+}
+
+/* .bio {
+  margin: auto;
+  width: 90%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+} */
+
+#profile {
+  font-size: 100px;
+  color: #E2AA2E;
+}
+
+.p-3 {
+  border-radius: 20px;
+  color: #49224A;
+  box-shadow: 2px 2px 2px #49224A;
+}
+
+/* .bi {
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-left: 5rem;
+  width: 70%;
+  color: #49224A;
+  box-shadow: 2px 2px 2px #49224A;
+} */
+
+h3 {
+  color: #E2AA2E;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+}
+
+.dropdown-menu li a {
+  color: #49224A;
+}
+
+.btn-sec{
+  background-color: #49224A;
+  color: white;
+  border: solid white 1px;
+  
+}
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+  margin-left: 25px;
+ 
+}
+.btn-close{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid white 1px;
+ 
+}
+

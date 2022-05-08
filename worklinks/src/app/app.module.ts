@@ -29,6 +29,8 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 
 @NgModule({
@@ -54,6 +56,8 @@ import { HttpClientModule } from '@angular/common/http';
     EmployerLoginComponent,
     EmployerNavbarComponent,
     SearchResultsComponent,
+    EmployerLandingComponent,
+    SearchFilterPipe,
     
 
   ],
@@ -69,7 +73,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
