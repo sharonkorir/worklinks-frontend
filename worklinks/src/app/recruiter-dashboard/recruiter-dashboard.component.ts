@@ -26,6 +26,7 @@ export class RecruiterDashboardComponent implements OnInit {
  deleteId!: number;
  jobs!: Job[];
   dialog: any;
+  heroesUrl!:'http://worklinks.herokuapp.com/api/Job/'
   status!: string;
     
   constructor(
@@ -36,11 +37,7 @@ export class RecruiterDashboardComponent implements OnInit {
 
   ngOnInit(): void {
  this.getJobs();
- this.deletejobs();
-  }
-  deletejobs(){
-    this.http.delete('http://127.0.0.1:8000/api/Job/')
-            .subscribe(() => this.status = 'Delete successful')
+
   }
   
   getJobs(){
@@ -51,20 +48,12 @@ export class RecruiterDashboardComponent implements OnInit {
       }
     );
   }
-  onDelete() {
-    const deleteURL = 'http://127.0.0.1:8000/api/Job/' + this.deleteId + '/delete';
-    this.http.delete(deleteURL)
-      .subscribe((results) => {
-        this.ngOnInit();
-        this.dialog.closeAll();
-      });
+  updateJobs(jobs: any,id:number){
+    this.http.put<any>('http://worklinks.herokuapp.com/api/Job/',id,jobs).subscribe(
+      response => {
+        console.log(response);
+        jobs = response;
+      }
+    );
   }
-  openDelete(templateRef:TemplateRef<any>, job: any) {
-    this.deleteId = job.id;
-    this.dialog.open(templateRef, {
-      with:'40%',
-      height:'70%'
-    });
-  }
-
 }
