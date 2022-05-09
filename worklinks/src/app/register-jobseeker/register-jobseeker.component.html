@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">Worklinks</a>
-      </div>
+    </div>
     <div class="buttn" id="pages">
         <a href="#" class="jobse"> For job seekers</a>
         <a href="#" class="comp"> For companies</a>
@@ -9,13 +9,24 @@
         <button class="btn " id="loginb" routerLink="/jobseeker/login">Login</button>
     </div>
 </nav>
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form [formGroup]="form" (submit)="submit()">
+    <div class="head">
+        <h1>Register</h1>
+        <p>Please enter your credentials to <br> Register as job seeker </p>
+    </div>
+    <hr>
+
+    <input formControlName="name" class="form-control" placeholder="Name" required>
+
+    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+
+    <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+</form>
+<!-- <form action="/action_page.php" style="border:1px solid #ccc">
     <div class="container" id="regform">
-        <div class="head">
-            <h1>Register</h1>
-      <p>Please enter your credentials to <br> Register as job seeker </p>
-        </div>
-      <hr>
+       
   
       <label for="email"><b>Name:</b></label><br>
       <input type="text" placeholder="Enter your name" name="email" required><br>
@@ -41,4 +52,4 @@
     </div>
   </form>
   
-
+ -->
