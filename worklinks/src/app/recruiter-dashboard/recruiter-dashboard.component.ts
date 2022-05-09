@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import * as Emitter from 'component-emitter';
 import TypedEmitter from "typed-emitter";
-import { SearchFilterPipe } from '../search-filter.pipe';
 
 
 export class Job{
@@ -46,12 +45,5 @@ export class RecruiterDashboardComponent implements OnInit {
       }
     );
   }
-  updateJobs(jobs: any,id:number){
-    this.http.put<any>('http://worklinks.herokuapp.com/api/Job/',id,jobs).subscribe(
-      response => {
-        console.log(response);
-        jobs = response;
-      }
-    );
-  }
+  
 }
