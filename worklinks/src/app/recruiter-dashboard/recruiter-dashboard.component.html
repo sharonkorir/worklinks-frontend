@@ -12,7 +12,7 @@
 
         <div class="form-group post-job">
 
-            <input type="text" class="form-control mb-4" placeholder="Search " [(ngModel)]="searchFilter" id="listSearch">
+            <input type="text" class="form-control mb-4" placeholder="Search " [(ngModel)]="searchList" id="listSearch">
 
         </div>
 
@@ -20,10 +20,10 @@
         <div class="post-job">
             <a href="/post-job"> <button class="btn btn-outline-success" type="submit">Post Job</button></a>
         </div>
-
+        <p>{{jobs.length}}</p>
     </div>
     <div class="row gx-5  ">
-        <div class="jobs col-md-6" *ngFor="let job of jobs| searchFilter: searchFilter">
+        <div class="jobs col-md-6" *ngFor="let job of jobs| searchList: searchList">
             <div class="p-3 border">
                 <h3>{{job.title}}</h3>
                 <div class="sub-head top">

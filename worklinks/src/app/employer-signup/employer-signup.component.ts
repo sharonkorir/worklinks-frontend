@@ -21,8 +21,8 @@ export class EmployerSignupComponent implements OnInit {
   registerForm = this.fb.group({
     email: ["" ,Validators.required],
     username : ["",Validators.required],
-    companyName : ["",Validators.required],
-    phone : ["",Validators.required],
+    // companyName : ["",Validators.required],
+    // phone : ["",Validators.required],
     password1 : ["",Validators.required],
     password2 : ["",Validators.required],
   })
@@ -33,7 +33,7 @@ export class EmployerSignupComponent implements OnInit {
   })
 
   get email(){return this.registerForm.get('email')}
-  get password1(){return this.registerForm.get('password1')}
+  get password(){return this.registerForm.get('password1')}
   get password2(){return this.registerForm.get('password2')}
   get username(){return this.registerForm.get('username')}
   get phone(){return this.registerForm.get('phone')}
@@ -53,7 +53,8 @@ export class EmployerSignupComponent implements OnInit {
   onSubmit(){
     console.log(this.registerForm.getRawValue());
     /* add api endpoint to post ('') */
-    
+    this.http.post('https://auths-job.herokuapp.com/api/register/employer/',this.registerForm.getRawValue())
+    .subscribe(() => this.router.navigate(['/employer/login']));
     
   }
   lipaNaMpesa(){

@@ -21,7 +21,7 @@ export class Job{
   styleUrls: ['./recruiter-dashboard.component.css']
 })
 export class RecruiterDashboardComponent implements OnInit {
- public searchFilter: any = '';
+ public searchList: any = '';
 
  jobs!: Job[];
     
@@ -33,7 +33,7 @@ export class RecruiterDashboardComponent implements OnInit {
  this.getJobs();
   }
   getJobs(){
-    this.http.get<any>('http://127.0.0.1:8000/api/Job/').subscribe(
+    this.http.get<any>('https://worklinks.herokuapp.com/api/Job/').subscribe(
       response => {
         console.log(response);
         this.jobs = response;
