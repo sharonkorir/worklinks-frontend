@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-profile-form',
@@ -6,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileFormComponent implements OnInit {
 
-  constructor() { }
+  data: any;
+  constructor(private http:HttpClient) { }
+  onSubmit(data: any){
+    this.http.post('https://moiwork.herokuapp.com/api/UpdateUserProfile/',data)
+    .subscribe((results) =>{
+      console.warn('results',results)
+      alert("Profile updated Successfully")
 
+      this.data.reset();
+    })
+    console.log(data);
+    
+     }
   ngOnInit(): void {
   }
 

@@ -25,9 +25,7 @@ export class RecruiterDashboardComponent implements OnInit {
  public searchFilter: any = '';
  deleteId!: number;
  jobs!: Job[];
-  dialog: any;
-  heroesUrl!:'http://worklinks.herokuapp.com/api/Job/'
-  status!: string;
+ 
     
   constructor(
     private http:HttpClient
