@@ -21,16 +21,13 @@ nav{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .spacer {
   flex: 1;
 }
-
 .toolbar {
   position: fixed;
   width: 100%;
   /* font-family: 'Big Shoulders Stencil Text', cursive; */
-
   overflow: hidden;
   top: 0;
   left: 0;
@@ -38,10 +35,9 @@ nav{
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #49224a;
+  background-color: #49224A;
   color: white;
   font-weight: 600;
-  
 }
 .toolbar> a{
   text-decoration: none;
@@ -50,26 +46,21 @@ nav{
   color: white;
   font-size: larger;
 }
-
 .toolbar img {
   margin: 0 16px;
 }
-
 .toolbar #twitter-logo {
   height: 40px;
   margin: 0 8px;
 }
-
 .toolbar #youtube-logo {
   height: 40px;
   margin: 0 16px;
 }
-
 .toolbar #twitter-logo:hover,
 .toolbar #youtube-logo:hover {
   opacity: 0.8;
 }
-
 
 #loginb{
   background-color: #49224A;
@@ -98,6 +89,16 @@ nav{
   margin-right: 20px;
 
 }
-
-
-
+.buttn{
+  margin-left: 710px;
+}
+.jobse{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.comp{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}

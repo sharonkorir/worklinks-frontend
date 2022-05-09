@@ -1,6 +1,7 @@
 
 body {
-  background: #49224a;
+
+  background: #49224A;
   font-family: "Oswald", sans-serif;
   font-style: italic;
 }
@@ -13,8 +14,9 @@ body {
 }
 
 .glitch, .glow {
-  margin-left: -5rem;
-  color: #dfbfbf;
+  margin-left: -3.5rem;
+
+
   position: relative;
   font-size: 9vw;
   animation: glitch 5s 5s infinite;
@@ -24,7 +26,9 @@ body {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: -5px 0 #49224a;
+
+  text-shadow: -5px 0 #49224A;
+
   background: black;
   overflow: hidden;
   top: 0;
@@ -36,7 +40,9 @@ body {
   position: absolute;
   left: 2px;
   text-shadow: -5px 0 lightgreen;
-  background: #49224a;
+
+  background: #49224A;
+
   overflow: hidden;
   top: 0;
   animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
@@ -262,7 +268,9 @@ body {
   }
 }
 .glow {
-  text-shadow: 0 0 1000px #49224a;
+
+  text-shadow: 0 0 1000px #49224A;
+
   color: transparent;
   position: absolute;
   top: 0;
@@ -272,7 +280,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 0.8vw;
-  color:  #49224a;
+
+  color:  #49224A;
+
   text-transform: uppercase;
   letter-spacing: 1em;
   text-align: center;
