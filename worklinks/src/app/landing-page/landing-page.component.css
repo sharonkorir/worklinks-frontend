@@ -71,7 +71,6 @@ margin-left: 2rem;
    text-align:center;
    color:rgb(54, 53, 53);
    margin:0 0 20px 0;
-   
 }
 .mission .right hr{
    width:35%;
@@ -199,7 +198,6 @@ footer p{
    color: orange;
 }
 #picpic{
-
    margin-left: 48em;
    height: 18rem;
 }
@@ -215,7 +213,6 @@ footer p{
 #header3{
    font-family: 'Courier New', Courier, monospace;
    color: black;
-  
 }
  .row{
     margin-left: -3rem;
@@ -224,16 +221,3 @@ footer p{
    font-family: 'Big Shoulders Stencil Text', cursive;
    margin-left: 6rem;
 }
-/* progress bar */
-
- .row{
-    margin-left: -3rem;
- }
-
-#onebutton{
-   font-family: 'Big Shoulders Stencil Text', cursive;
-   margin-left: 6rem;
-
-}
-
-/* progress bar */
