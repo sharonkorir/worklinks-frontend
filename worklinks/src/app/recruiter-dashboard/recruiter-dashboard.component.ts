@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import * as Emitter from 'component-emitter';
 import TypedEmitter from "typed-emitter";
 
@@ -22,18 +22,23 @@ export class Job{
 })
 export class RecruiterDashboardComponent implements OnInit {
  public searchFilter: any = '';
-
+ deleteId!: number;
  jobs!: Job[];
+ 
     
   constructor(
     private http:HttpClient
   ) { }
 
+
+
   ngOnInit(): void {
  this.getJobs();
+
   }
+  
   getJobs(){
-    this.http.get<any>('http://127.0.0.1:8000/api/Job/').subscribe(
+    this.http.get<any>('http://worklinks.herokuapp.com/api/Job/').subscribe(
       response => {
         console.log(response);
         this.jobs = response;

@@ -22,8 +22,10 @@
         </div>
 
     </div>
+    <h3>You have {{ jobs.length }} jobs posted</h3>
     <div class="row gx-5  ">
         <div class="jobs col-md-6" *ngFor="let job of jobs| searchFilter: searchFilter">
+
             <div class="p-3 border">
                 <h3>{{job.title}}</h3>
                 <div class="sub-head top">
@@ -35,9 +37,11 @@
                 <div class="sub-head top">
                     <p><i class="fa fa-map-marker" aria-hidden="true"></i><small> {{job.location}}</small></p>
                     <p><i class="fa fa-trash-o" aria-hidden="true"></i></p>
+
                 </div>
             </div>
         </div>
 
 
     </div>
+</div>

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./post-job-form.component.css']
 })
 export class PostJobFormComponent implements OnInit {
+  formValue: any;
 
 
   constructor(
@@ -15,9 +16,12 @@ export class PostJobFormComponent implements OnInit {
    
   ) { }
   onSubmit(data: any){
-    this.http.post('http://127.0.0.1:8000/api/Job/',data)
+    this.http.post('http://worklinks.herokuapp.com/api/Job/',data)
     .subscribe((results) =>{
       console.warn('results',results)
+      alert("Job Posted Successfully")
+
+      this.formValue.reset();
     })
     console.log(data);
     
