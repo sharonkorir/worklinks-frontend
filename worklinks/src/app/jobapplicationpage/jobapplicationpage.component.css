@@ -1,3 +1,12 @@
+.navbar {
+    background-color: #49224A;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
 .top {
     display: flex;
     justify-content: space-between;
@@ -62,3 +71,14 @@ h3 {
   color: white;
   border: solid white 1px;
 }
+.signupbtn {
+    width: 13%;
+    height: 20%;
+    color: white;
+    background-color: #49224A;
+    border: none;
+    border-radius: 5px ;
+    padding: 5px;
+    margin-left: 250px;
+
+  }
