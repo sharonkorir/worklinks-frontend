@@ -13,6 +13,7 @@ body {
 }
 
 .glitch, .glow {
+  margin-left: -5rem;
   color: #dfbfbf;
   position: relative;
   font-size: 9vw;
