@@ -1,16 +1,16 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" style="font-family: 'Big Shoulders Stencil Text', cursive;" href="#">WorkLinks</a>
+        <a class="navbar-brand" style="font-family: 'Big Shoulders Stencil Text', cursive; font-size: 40px; margin-left: 2rem;" href="#">WorkLinks</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="d-flex" id="navbarSupportedContent">
+        <div class="d-flex" id="navbarSupportedContent" style="margin-right:40px;">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" style="font-size: larger;" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-size: larger;" aria-expanded="false">
                       Profile
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -34,43 +34,40 @@
 
 
     
-        <h1 style="text-align: center; padding-top: 30px;">Get your dream job by applying <br> one of these available jobs</h1>
+        <h1 style="text-align: left; color: #49224A; padding-top: 30px;">Get your dream job by applying <br> one of these available jobs</h1>
        
 
 
         <div class="form-group post-job">
 
-            <input type="text" class="form-control mb-4" placeholder="Search " id="listSearch" style="width:300px ;margin-left: 500px;">
+            <input type="text" class="form-control mb-4" placeholder="Search here " [(ngModel)]="searchList" id="listSearch" style="width:300px ;margin-left: 800px; margin-top: -150px;">
 
-        </div>
+        </div> 
+        <h3 style="margin-top:100px;">Checkout {{jobs.length}} jobs posted</h3>
 
 
         
 
     
-    <div class="row gx-5  ">
-        <div class="jobs col-md-6" >
-            <div class="p-3 border">
-                <div class="card" style="width: 18rem; ">
-                    <img src="/assets/images/WhatsApp_Image_2022-04-27_at_3.05.31_PM-removebg-preview.png" width="300" height="150" class="card-img-top" alt="...">
-        
-        
+        <div class="row gx-5  ">
+            <div class="jobs col-md-6" *ngFor="let job of jobs | searchList:searchList">
+                <div class="p-3 border">
+                    <h3>{{job.title}}</h3>
+                    <div class="sub-head top">
+                        <p><i class="fa fa-briefcase" aria-hidden="true"></i>{{job.jobtype}}</p>
+                        <p><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</p>
+                    </div>
+                    <br>
+                    <p>{{job.requirements}}</p>
+                    <div class="sub-head top">
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i><small> {{job.location}}</small></p>
+                        <p>posted on:</p>
+                    </div>
+                    <button type="submit" class="signupbtn" routerLink="/seekers-profile">Apply</button>
                 </div>
-                <h3 style="margin-left: 150px; margin-top:-100px;">Job Title</h3>
-                <div class="sub-head top">
-               
-                </div>
-                <br>
-                <p><i class="" style="margin-left: 310px; margin-top: -100px;" aria-hidden="true">Job Type</i></p>
-                <p>Requirements</p>
-                <div class="sub-head top">
-                    <p><i class="" aria-hidden="true">Location</i><small> </small></p>
-                    <a routerLink="/applicants/applicants" style="text-decoration: none; color: #E2AA2E;"><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</a>
-                    
-                </div>
-                <button type="submit" class="signupbtn" routerLink="/seekers-profile">Apply</button>
             </div>
+    
+    
         </div>
-
 
     </div>

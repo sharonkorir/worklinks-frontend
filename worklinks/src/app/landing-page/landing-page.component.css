@@ -13,7 +13,6 @@ nav{
    top:0;
    z-index:5;
 }
-
 .container{
    width:100%;
 }
@@ -55,8 +54,6 @@ nav{
    margin:40px auto;
    width:80%
 }
-
-
 .mission .right{
    padding:2% 0;
    width:50%;
@@ -64,9 +61,7 @@ display:inline-block;
 margin-left: 2rem;
 }
 .mission .left{
- 
    width:45%;
-
    display:inline-block;
 }
 .mission .left img{
@@ -87,18 +82,15 @@ margin-left: 2rem;
    margin:40px auto;
    width:80%
 }
-
-
 .team{
    width:90%;
    margin:auto;
    padding:5% 5%;
-   over-flow:hidden;
+   overflow:hidden;
 }
 .team h1{
    text-align:center;
    color:rgb(43, 41, 41);
-   
 }
 .team h1 hr{
    width:15%;
@@ -138,7 +130,6 @@ margin-left: 2rem;
    margin:0;
    font-size:60px;
 }
-
 .team .card h2{
    text-align:center;
    margin:30px 0 0 0;
@@ -151,12 +142,10 @@ margin-left: 2rem;
    width:250px;
    margin:30px auto;
    text-align:center;
-
 }
 .clear{
-    clear: both;			
+    clear: both;
 }
-
 footer{
    width:100%;
    height:100px;
@@ -166,12 +155,6 @@ footer p{
    text-align:center;
    padding: 0 2% ;
 }
-
-
-
-
-
-
 /* media */
 @media(max-width:1200px){
    .mission .right p{
@@ -183,62 +166,59 @@ footer p{
       margin:20px auto;
    }
 }
-
-
-
-
-
-
 @media(max-width:992px){
    .about .left{
-   width:100%; 
+   width:100%;
 }
    .about .right{
-   width:100%; 
+   width:100%;
 }
       .mission .left{
-   width:100%; 
+   width:100%;
 }
    .mission .right{
-   width:100%; 
-}
-   .team .card{ 
-   width:40%;
-}   
-}
-
-@media(max-width:768px){
-      .team .card{ 
    width:100%;
-} 
+}
+   .team .card{
+   width:40%;
+}
+}
+@media(max-width:768px){
+      .team .card{
+   width:100%;
+}
    nav{
       height:80px;
    }
 }
-
 #finya2{
    font-family:'Big Shoulders Stencil Text', cursive;
    margin-left: 2rem;
    background-color: white;
    color: orange;
 }
-
 #picpic{
-   margin-left: 40rem;
+   margin-left: 48em;
    height: 18rem;
 }
 #line99{
    /* font-family:'Big Shoulders Stencil Text', cursive; */
    text-align: center;
    color: black;
+   line-height: 9rem;
 }
 .row{
    margin-top: -15rem;
 }
-
 #header3{
    font-family: 'Courier New', Courier, monospace;
    color: black;
 }
- 
+ .row{
+    margin-left: -3rem;
+ }
+#onebutton{
+   font-family: 'Big Shoulders Stencil Text', cursive;
+   margin-left: 6rem;
+}
 /* progress bar */
