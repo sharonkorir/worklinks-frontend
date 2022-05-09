@@ -255,24 +255,25 @@ ul {
    text-align: center;
    text-transform: capitalize;
    color: black;
+   font-size: 3rem;
    /* font-family:'Big Shoulders Stencil Text', cursive; */
  }
  
  #butt{
-   margin-left: 45rem;
+   margin-left: 38rem;
    flex: 1;
    background-color: white;
    font-weight: bolder;
    font-family:'Big Shoulders Stencil Text', cursive;
  }
  #finya1{
-  /* margin-left: 1rem; */
+  margin-left: 15rem;
   color: white;
   font-family:'Big Shoulders Stencil Text', cursive;
  }
- /* .topic09{
-  /* font-family:'Big Shoulders Stencil Text', cursive; 
- } */
+ .topic09{
+  color: black;
+ }
 
 
  /* members */
@@ -341,13 +342,21 @@ body {
 }
 
 .name {
-    font-size: 14px
+    font-size: 14px;
+    margin-left: -10rem;
 }
 
 .designation {
-    font-size: 10px
+    font-size: 10px;
+    margin-left: -10rem;
 }
-
+.initials{
+  color: black;
+}
+.slide{
+  text-align: center;
+  color: black;
+}
 
 
 /* bouncy words */
