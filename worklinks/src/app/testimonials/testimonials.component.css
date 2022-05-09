@@ -231,20 +231,25 @@ ul {
    /* font-family:'Big Shoulders Stencil Text', cursive; */
  }
  #butt{
+
    margin-left: 35rem;
+
    flex: 1;
    background-color: white;
    font-weight: bolder;
    font-family:'Big Shoulders Stencil Text', cursive;
  }
  #finya1{
+
   margin-left: 20rem;
+
   color: white;
   font-family:'Big Shoulders Stencil Text', cursive;
  }
  .topic09{
   color: black;
  }
+
  /* members */
 body {
     background-color: #eee;
@@ -314,6 +319,7 @@ body {
   text-align: center;
   color: black;
 }
+
 /* bouncy words */
 *,
 :before,

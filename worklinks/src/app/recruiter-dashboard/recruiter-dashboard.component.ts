@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import * as Emitter from 'component-emitter';
-import TypedEmitter from "typed-emitter";
+// import TypedEmitter from "typed-emitter";
 
 
 export class Job{
