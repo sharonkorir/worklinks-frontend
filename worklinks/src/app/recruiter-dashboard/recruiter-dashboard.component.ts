@@ -21,7 +21,7 @@ export class Job{
   styleUrls: ['./recruiter-dashboard.component.css']
 })
 export class RecruiterDashboardComponent implements OnInit {
- public searchFilter: any = '';
+ public searchList: any = '';
  deleteId!: number;
  jobs!: Job[];
  
