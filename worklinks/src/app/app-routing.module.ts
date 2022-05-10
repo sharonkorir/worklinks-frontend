@@ -15,6 +15,9 @@ import { EmployerLoginComponent } from './employer-login/employer-login.componen
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
 import { HomeComponent } from './home/home.component';
+import { JobseekerLandingPageComponent } from './jobseeker-landing-page/jobseeker-landing-page.component';
+import { RecruiterLandingPageComponent } from './recruiter-landing-page/recruiter-landing-page.component';
+
 
 
 const routes: Routes = [
@@ -49,6 +52,8 @@ const routes: Routes = [
   {path: 'jobseeker/login', component: LoginJobseekerComponent},
   {path: 'applicants/applicants', component: ApplicantsComponent},
   {path: 'job/application', component: JobapplicationpageComponent},
+  { path: 'jobseeker/landingpage', component: JobseekerLandingPageComponent},
+  { path: 'employer/landingpage', component: RecruiterLandingPageComponent},
 
 
 
