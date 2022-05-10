@@ -72,7 +72,7 @@ nav{
    margin-right: 16px;
   }
   .buttn{
-    margin-left: 600px;
+    margin-left: 850px;
   }
   .jobse{
     color: white;
@@ -94,7 +94,7 @@ nav{
   
   .hero{
     width: 80%; 
-    padding-top: 100px;
+    padding-top: 50px;
   }
   
   #jobseekers {
@@ -112,7 +112,7 @@ nav{
   .jobseekers{
     float: right;
     width: 80%; 
-    padding-top: 100px;
+    padding-top: 50px;
   }
   
   ul {
@@ -149,4 +149,27 @@ nav{
     width: 100%;
   }
   
+  .pri1{
+    background-color: #E2AA2E;
+    color: white;
+  }
   
+  .sec1{
+    background-color: white;
+    color: #E2AA2E;
+  }
+  
+  p, li{
+    font-size: 20px;
+    font-family: 'Krub', sans-serif; 
+  }
+  
+  h4{
+    font-size: 36px;
+    font-family: 'Krub', sans-serif;
+  }
+  
+  h5{
+    font-size: 28px;
+    font-family: 'Krub', sans-serif;
+  }
