@@ -33,6 +33,8 @@ import { EmployerLandingComponent } from './employer-landing/employer-landing.co
 import { SearchFilterPipe } from './search-filter.pipe';
 import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
 import { HomeComponent } from './home/home.component';
+import { JobseekerLandingPageComponent } from './jobseeker-landing-page/jobseeker-landing-page.component';
+import { RecruiterLandingPageComponent } from './recruiter-landing-page/recruiter-landing-page.component';
 
 
 @NgModule({
@@ -62,6 +64,8 @@ import { HomeComponent } from './home/home.component';
     SearchFilterPipe,
     JobapplicationpageComponent,
     HomeComponent,
+    JobseekerLandingPageComponent,
+    RecruiterLandingPageComponent,
     
 
   ],
