@@ -14,6 +14,7 @@ import { EmployerSignupComponent } from './employer-signup/employer-signup.compo
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
@@ -60,6 +61,7 @@ const routes: Routes = [
   { path: 'employer/register', component: EmployerSignupComponent},
   { path: 'employer/login', component: EmployerLoginComponent},
   { path: 'search', component: SearchResultsComponent},
+  { path: 'home', component: HomeComponent},
 ];
 
 @NgModule({

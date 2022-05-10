@@ -32,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { JobapplicationpageComponent } from './jobapplicationpage/jobapplication
     EmployerLandingComponent,
     SearchFilterPipe,
     JobapplicationpageComponent,
+    HomeComponent,
     
 
   ],
