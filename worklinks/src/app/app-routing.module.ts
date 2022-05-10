@@ -18,7 +18,8 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  {path:'',component:LandingPageComponent},
+  // {path:'',component:LandingPageComponent},
+  { path: '', component: HomeComponent},
   {
     path:'jobseeker-profile',component:ProfileComponent
     
@@ -61,7 +62,7 @@ const routes: Routes = [
   { path: 'employer/register', component: EmployerSignupComponent},
   { path: 'employer/login', component: EmployerLoginComponent},
   { path: 'search', component: SearchResultsComponent},
-  { path: 'home', component: HomeComponent},
+  
 ];
 
 @NgModule({

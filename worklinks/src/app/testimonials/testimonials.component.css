@@ -256,9 +256,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300
 }
-.container {
-    margin-top: 50px
-}
+
 .card {
     border: none;
     border-radius: 13px;
@@ -335,15 +333,16 @@ body {
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80em;
+    max-width: 80em; 
 }
 #container {
     display: flex;
     flex-direction: column;
-    float: left;
     justify-content: center;
-    min-height: 100vh;
+    text-align: center;
+    min-height: 50vh;
     padding: 1em;
+    padding-top: 50px;
     width: 100%;
 }
 h1 {

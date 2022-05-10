@@ -7,7 +7,7 @@ nav{
 .navbar-brand{
   color: white;
   font: bold;
-  padding-left: 40px;
+  padding-left: 300px;
   font-family: 'Big Shoulders Stencil Text', cursive;
   font-size:40px;
 }
@@ -71,7 +71,7 @@ nav{
  margin-right: 16px;
 }
 .buttn{
-  margin-left: 1100px;
+  margin-left: 600px;
 }
 .jobse{
   color: white;
