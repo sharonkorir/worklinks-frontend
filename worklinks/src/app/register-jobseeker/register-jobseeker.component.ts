@@ -29,6 +29,6 @@ export class RegisterJobseekerComponent implements OnInit {
 
   submit(): void {
     this.http.post('https://moiwork.herokuapp.com/register', this.form.getRawValue())
-      .subscribe(() => this.router.navigate(['/employer/login']));
+      .subscribe(() => this.router.navigate(['/jobseeker/login']));
   }
 }
