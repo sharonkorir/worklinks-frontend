@@ -27,7 +27,7 @@ export class EmployerLoginComponent implements OnInit {
     submit(): void {
       this.http.post('https://moiwork.herokuapp.com/login', this.form.getRawValue(), {
         withCredentials: true
-      }).subscribe(() => this.router.navigate(['/recruiter-dashboard']));
+      }).subscribe(() => this.router.navigate(['/recruiter-profile']));
     }
   }
   
