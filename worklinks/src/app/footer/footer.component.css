@@ -17,9 +17,12 @@
 .footfoot{
     font-family: 'Big Shoulders Stencil Text', cursive;
     font-size: 2rem;
-    margin-left: -6rem;
+    /* margin-left: -6rem; */
 }
-.footfoot1{
-    margin-left: -6rem;
+#icon{
+  min-width: 30px;
 }
+/* .footfoot1{
+    margin-left: -6rem;
+} */
 

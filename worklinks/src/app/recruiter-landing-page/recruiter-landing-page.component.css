@@ -85,14 +85,33 @@ nav{
     margin-right: 20px;
   }
 
-#hero {
+
+  #hero {
     background-image: url(https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
     background-repeat: no-repeat;
     background-size: cover;
   }
   
+  .herofinal {
+    height: 600px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   
   .hero{
+    width: 80%; 
+    padding-top: 50px;
+  }
+  
+  .hero1{
     width: 80%; 
     padding-top: 50px;
   }
@@ -112,7 +131,6 @@ nav{
   .jobseekers{
     float: right;
     width: 80%; 
-    padding-top: 50px;
   }
   
   ul {

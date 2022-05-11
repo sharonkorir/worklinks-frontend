@@ -5,8 +5,26 @@
   background-size: cover;
 }
 
+.herofinal {
+  height: 600px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .hero{
+  width: 80%; 
+  padding-top: 50px;
+}
+
+.hero1{
   width: 80%; 
   padding-top: 50px;
 }
