@@ -22,7 +22,6 @@ export class Job{
 })
 export class RecruiterDashboardComponent implements OnInit {
  public searchList: any = '';
- deleteId!: number;
  jobs!: Job[];
  
     
@@ -38,7 +37,7 @@ export class RecruiterDashboardComponent implements OnInit {
   }
   
   getJobs(){
-    this.http.get<any>('http://worklinks.herokuapp.com/api/Job/').subscribe(
+    this.http.get<any>('https://worklinks.herokuapp.com/api/Job/').subscribe(
       response => {
         console.log(response);
         this.jobs = response;
