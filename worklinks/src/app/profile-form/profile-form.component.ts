@@ -27,7 +27,7 @@ export class ProfileFormComponent implements OnInit {
     .subscribe((results) =>{
       console.warn('results',results)
       alert("Profile updated Successfully")
-      this.router.navigate(['/seekers-profile'])
+      this.router.navigate(['/job/application'])
    
       this.data.reset();
     })

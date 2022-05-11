@@ -37,7 +37,8 @@
 
         <div class="prof">
             <div class="pic">
-                <img src="{{profiles.profile_image.url}}" alt="">
+                <img *ngFor="let img of profile" src="
+                cloudinary.url({{filteredImages(img.profile_image)}})">
             </div>
             <div class="details">
                 <h5><span> <i class="fa  fa-user" aria-hidden="true"></i>:</span>{{profiles.full_name}}</h5>

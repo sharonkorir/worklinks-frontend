@@ -9,7 +9,7 @@ export class Profile{
     public email: string,
     public location: string,
     public jobtype: string,
-    public profile_image:any,
+    public profile_image:File,
     public resume:any,
     public bio:string,
     public work_experience:string,
@@ -42,5 +42,9 @@ profile!:Profile[];
         this.profile = response;
       }
     );
+  }
+  filteredImages(value: any) {
+    const imageString = value.replace('https://moiwork.herokuapp.com/media/', 'https://moiwork.herokuapp.com/media/')
+    return imageString
   }
 }
