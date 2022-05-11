@@ -73,7 +73,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-signupbtn {
+.signupbtn {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -124,3 +124,43 @@ button:hover {
 label{
     margin-left: 40px;
 }
+
+a{
+  text-decoration: none;
+  color: #E2AA2E;
+}
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-sec{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+}
+.head{
+  text-align: center;
+}
+input[type=text], input[type=password], input[type=number],input[type=email] {
+  width: 65%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-color: rgb(32, 34, 32);
+  border-width: 0.1px;
+  box-shadow: 0px 0px 0px 0px ;
+  border-radius: 10px 10px 10px 10px;
+  background: white;
+  margin-left: 100px;
+}
+#ebtn{
+  background-color: white;
+  color: #E2AA2E;
+  border: solid #E2AA2E 1px;
+  margin-top: 20px;
+}
+

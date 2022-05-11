@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators} from '@angular/forms';
-
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-employer-login',
@@ -10,23 +11,22 @@ import { FormBuilder, Validators} from '@angular/forms';
 export class EmployerLoginComponent implements OnInit {
 
  
-
-  loginForm = this.fb.group({
-    email: ["" ,Validators.required],
-    // username : ["" ,Validators.required],
-    // phone : ["" ,Validators.required],
-    password1 : ["" ,Validators.required],
+  form!: FormGroup;
   
-  })
+  constructor( private formBuilder: FormBuilder,
+    private http: HttpClient,
+    private router: Router) { }
 
-  get email(){return this.loginForm.get('email')}
-  get password1(){return this.loginForm.get('password1')}
-
-  constructor(private fb: FormBuilder) { }
-
-  ngOnInit(): void {
+    ngOnInit(): void {
+      this.form = this.formBuilder.group({
+        email: '',
+        password: ''
+      });
+    }
+  
+    submit(): void {
+      this.http.post('https://moiwork.herokuapp.com/login', this.form.getRawValue(), {
+        withCredentials: true
+      }).subscribe(() => this.router.navigate(['/recruiter-profile']));
+    }
   }
-  onSubmit(){
-    console.log(this.loginForm.value);
-  }
-}
