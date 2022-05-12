@@ -26,7 +26,7 @@ export class LoginJobseekerComponent implements OnInit {
     submit(): void {
       this.http.post('https://moiwork.herokuapp.com/login', this.form.getRawValue(), {
         withCredentials: true
-      }).subscribe(() => this.router.navigate(['/jobseeker-profile']));
+      }).subscribe(() => this.router.navigate(['/job/application']));
     }
   }
   

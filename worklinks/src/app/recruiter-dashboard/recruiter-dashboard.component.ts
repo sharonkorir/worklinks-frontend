@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import * as Emitter from 'component-emitter';
 import TypedEmitter from "typed-emitter";
+import { apply } from '../applicants/applicants.component';
 
 
 export class Job{
@@ -23,7 +24,7 @@ export class Job{
 export class RecruiterDashboardComponent implements OnInit {
  public searchList: any = '';
  jobs!: Job[];
- 
+ apply!: apply[];
     
   constructor(
     private http:HttpClient
@@ -45,4 +46,12 @@ export class RecruiterDashboardComponent implements OnInit {
     );
   }
   
+  applyJobs(){
+    this.http.get<any>('https://moiwork.herokuapp.com/api/Apply/').subscribe(
+      response => {
+        console.log(response);
+        this.apply = response;
+      }
+    );
+  }
 }

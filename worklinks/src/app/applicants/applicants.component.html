@@ -23,40 +23,54 @@
 
     </div>
 
-    <h4 class="headera">6 Candidates Applied For this job</h4>
+    <h4 class="headera">{{apply.length}} Candidates Applied For this job</h4>
 
-    <div class="applicantf">
-        <img src="../assets/profilepic.jpg" alt="" height="200px" width="200px">
-        <p class="info"><strong>Zara Kim</strong> | zarakim@gmail.com</p>
+    <!-- <div class="row gx-5">
+        <div class="col-md-6">
+            <div class=" p-3 border" *ngFor="let apply of apply">
+                <h5 class="card-title">{{apply.Full_Name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{apply.Email}}</h6>
+                <p class="card-text">{{apply.Contact}}</p>
+                <p class="card-text">{{apply.Salary_Expectations}}
+                    <p>
+                        <button class="btn " id="viewp">View full profile</button>
 
-        <h3 class="skills">Skills</h3>
-        <p class="listskills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, hic repudiandae aspernatur voluptatum reprehenderit error omnis itaque perspiciatis praesentium incidunt, magni distinctio dolores, eos natus nihil. Assumenda accusamus officiis
-            recusandae!
-        </p>
-        <button class="btn " id="viewp">View full profile</button>
+            </div>
+        </div>
+    </div> -->
+    <div class="row gx-5  ">
+        <div class="jobs col-md-6" *ngFor="let apply of apply">
+
+            <div class="p-3 border">
+                <h3>{{apply.Full_Name}}</h3>
+                <div class="sub-head top">
+                    <p><i class="fa fas fa-envelope" aria-hidden="true"></i> : {{apply.Email}}</p>
+
+                </div>
+                <br>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i> : {{apply.Contact}}</p>
+                <div class="sub-head top">
+                    <p><i class="fa fa-money" aria-hidden="true"></i>: {{apply.Salary_Expectations}}</p>
+                    <button class="btn " id="viewp">View full profile</button>
+
+                </div>
+            </div>
+        </div>
+
 
     </div>
+</div>
 
-    <div class="applicantf">
-        <img src="../assets/profilepic.jpg" alt="" height="200px" width="200px">
-        <p class="info"><strong>Name      |    Email</strong></p>
+<!-- <div class="applicantf" *ngFor="let apply of apply">
 
-        <h3 class="skills">Skills</h3>
-        <p class="listskills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, hic repudiandae aspernatur voluptatum reprehenderit error omnis itaque perspiciatis praesentium incidunt, magni distinctio dolores, eos natus nihil. Assumenda accusamus officiis
-            recusandae!
+        <p class="info"><strong>{{apply.Full_Name}}</strong> | zarakim@gmail.com</p>
+
+        <p class="info">{{apply.Contact}}</p>
+
+        <p class="listskills">{{apply.Email}}
+
         </p>
+        <p class="info">{{apply.Salary_Expectations}}</p>
         <button class="btn " id="viewp">View full profile</button>
 
-    </div>
-
-    <div class="applicantf">
-        <img src="../assets/profilepic.jpg" alt="" height="200px" width="200px">
-        <p class="info"><strong>Name      |    Email</strong></p>
-
-        <h3 class="skills">Skills</h3>
-        <p class="listskills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, hic repudiandae aspernatur voluptatum reprehenderit error omnis itaque perspiciatis praesentium incidunt, magni distinctio dolores, eos natus nihil. Assumenda accusamus officiis
-            recusandae!
-        </p>
-        <button class="btn " id="viewp">View full profile</button>
-
-    </div>
+    </div> -->

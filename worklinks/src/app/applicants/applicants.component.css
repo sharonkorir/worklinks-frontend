@@ -47,7 +47,6 @@ nav {
     margin-top: 150px;
     height: 50px;
     width: 100px;
-    border-color: rgb(32, 34, 32);
     border-width: 1px;
     box-shadow: 0px 0px 0px 1px;
     border-radius: 20px 20px 20px 20px;
@@ -104,6 +103,15 @@ form.example::after {
     display: table;
 }
 
+h3,
+p {
+    color: #49224A;
+}
+
+.fas {
+    color: #E2AA2E;
+}
+
 .searchicon {
     color: black;
 }
@@ -123,18 +131,20 @@ form.example::after {
     padding-top: 30px;
 }
 
+
+/* 
 .applicantf {
     background-color: white;
     height: 400px;
     width: 1000px;
-    border-color: rgb(32, 34, 32);
+  
     border-width: 1px;
     box-shadow: 0px 0px 0px 1px;
     border-radius: 20px 20px 20px 20px;
     margin-left: 240px;
     padding: 10px;
     margin-bottom: 50px;
-}
+} */
 
 .info {
     margin-left: 400px;
