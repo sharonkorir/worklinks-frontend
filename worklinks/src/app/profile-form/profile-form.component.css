@@ -69,3 +69,28 @@ h2 {
   clear: both;
   display: table;
 }
+
+.pri1{
+  background-color: #E2AA2E;
+  color: white;
+}
+
+.sec1{
+  background-color: white;
+  color: #E2AA2E;
+}
+
+p, li{
+  font-size: 20px;
+  font-family: 'Krub', sans-serif; 
+}
+
+h4{
+  font-size: 36px;
+  font-family: 'Krub', sans-serif;
+}
+
+h5{
+  font-size: 28px;
+  font-family: 'Krub', sans-serif;
+}
