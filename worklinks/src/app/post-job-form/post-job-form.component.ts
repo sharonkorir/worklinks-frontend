@@ -12,7 +12,8 @@ export class PostJobFormComponent implements OnInit {
 
 
   constructor(
-    private http:HttpClient
+    private http:HttpClient,
+    private router:Router
    
   ) { }
   onSubmit(data: any){
@@ -20,6 +21,7 @@ export class PostJobFormComponent implements OnInit {
     .subscribe((results) =>{
       console.warn('results',results)
       alert("Job Posted Successfully")
+      this.router.navigate(['/recruiter-dashboard'])
 
       this.formValue.reset();
     })

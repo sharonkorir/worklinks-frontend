@@ -12,6 +12,7 @@ import { ApplicantsComponent } from './applicants/applicants.component';
 import { EmployerSignupComponent } from './employer-signup/employer-signup.component';
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
 const routes: Routes = [
   {path:'',component:LandingPageComponent},
   {
@@ -38,6 +39,7 @@ path:'recruiter-dashboard',component:RecruiterDashboardComponent
   {path: 'jobseeker/register', component: RegisterJobseekerComponent},
   {path: 'jobseeker/login', component: LoginJobseekerComponent},
   {path: 'applicants/applicants', component: ApplicantsComponent},
+  {path: 'job/application', component: JobapplicationpageComponent},
 
 
 

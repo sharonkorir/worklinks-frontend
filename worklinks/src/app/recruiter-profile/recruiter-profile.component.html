@@ -2,33 +2,34 @@
 
     <app-recruiter-navbar></app-recruiter-navbar>
 
-    <h2 class="text-center">Create Company's Profile to get started with WorkLinks</h2>
+    <h2 class="text-center">{{message}} Create Company's Profile to get started with WorkLinks</h2>
     <br>
     <br>
 
-    <form [formGroup]='form' (ngsubmit)="submit()">
+    <form #userPost='ngForm' (ngSubmit)='onSubmit(userPost.value)'>
         <h4>Company Information</h4>
 
         <hr>
+
         <div class="form-group">
 
             <label for="name">Company Names</label>
 
-            <input formControlName="name" type="text" required class="form-control" id="name">
+            <input ngModel name="name" type="text" required class="form-control" id="name">
 
         </div>
         <div class="form-group">
 
             <label for="name">Company Logo</label> <br>
             <form action="" method="post" enctype="multipart/form-data">
-                <input formControlName="company_pic" type="file">
+                <input ngModel name="company_pic" type="file">
             </form>
 
         </div>
         <div class="form-group">
 
             <label for="name">Location</label>
-            <input formControlName="location" type="text" required class="form-control" id="name">
+            <input ngModel name="location" type="text" required class="form-control" id="name">
 
         </div>
 
@@ -36,19 +37,19 @@
         <div class="form-group">
 
             <label for="name">Address</label>
-            <input type="text" formControlName="address" required class="form-control" id="name">
+            <input type="text" ngModel name="address" required class="form-control" id="name">
 
         </div>
         <div class="form-group">
 
             <label for="name">Email</label>
-            <input type="email" formControlName="email" required class="form-control" id="name">
+            <input type="email" ngModel name="email" required class="form-control" id="name">
 
         </div>
         <div class="form-group">
 
             <label for="name">Company Contacts</label>
-            <input type="" formControlName="contact" required class="form-control" id="name">
+            <input type="number" ngModel name="contact" required class="form-control" id="name">
 
         </div>
 
@@ -62,8 +63,7 @@
         <div class="form-group">
 
             <label for="description">Why Your Company</label>
-            <textarea formControlName="company
-            _bio" class="form-control" id="description" rows="4" required></textarea>
+            <textarea ngModel name="company_bio" class="form-control" id="description" rows="4" required></textarea>
 
         </div>
         <br>

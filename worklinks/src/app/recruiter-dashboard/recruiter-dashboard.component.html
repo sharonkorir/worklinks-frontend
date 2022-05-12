@@ -12,7 +12,7 @@
 
         <div class="form-group post-job">
 
-            <input type="text" class="form-control mb-4" placeholder="Search " [(ngModel)]="searchFilter" id="listSearch">
+            <input type="text" class="form-control mb-4" placeholder="Search " [(ngModel)]="searchList" id="listSearch">
 
         </div>
 
@@ -24,13 +24,13 @@
     </div>
     <h3>You have {{ jobs.length }} jobs posted</h3>
     <div class="row gx-5  ">
-        <div class="jobs col-md-6" *ngFor="let job of jobs| searchFilter: searchFilter">
+        <div class="jobs col-md-6" *ngFor="let job of jobs| searchList: searchList">
 
             <div class="p-3 border">
                 <h3>{{job.title}}</h3>
                 <div class="sub-head top">
                     <p><i class="fa fa-briefcase" aria-hidden="true"></i>{{job.jobtype}}</p>
-                    <p><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</p>
+                    <p routerLink="/applicants/applicants"><i class="fa fa-users" aria-hidden="true"></i>view Applicants</p>
                 </div>
                 <br>
                 <p>{{job.requirements}}</p>

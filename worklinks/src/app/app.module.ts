@@ -30,6 +30,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchFilterPipe } from './search-filter.pipe';
+import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
    
 
 
@@ -56,7 +57,8 @@ import { SearchFilterPipe } from './search-filter.pipe';
     EmployerLoginComponent,
     EmployerNavbarComponent,
     SearchResultsComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    JobapplicationpageComponent
     
 
   ],
