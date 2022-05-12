@@ -28,7 +28,7 @@ onSubmit(data: any){
   .subscribe((results) =>{
     console.warn('results',results)
     alert("Profile updated Successfully")
-    this.router.navigate(['/seekers-profile'])
+    this.router.navigate(['/recruiter-dashboard'])
  
     this.data.reset();
   })
