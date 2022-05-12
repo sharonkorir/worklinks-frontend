@@ -1,12 +1,12 @@
 .navbar {
     background-color: #49224A;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     text-decoration: none;
     color: white;
-  }
-  
+}
+
 .top {
     display: flex;
     justify-content: space-between;
@@ -60,25 +60,39 @@ h3 {
     margin-top: 5rem;
 }
 
-.btn-pri{
-  background-color: #E2AA2E;
-  color: white;
- 
+.btn-pri {
+    background-color: #E2AA2E;
+    color: white;
 }
 
-.btn-sec{
-  background-color: #49224A;
-  color: white;
-  border: solid white 1px;
+.btn-sec {
+    background-color: #49224A;
+    color: white;
+    border: solid white 1px;
 }
+
 .signupbtn {
     width: 13%;
     height: 20%;
     color: white;
     background-color: #49224A;
     border: none;
-    border-radius: 5px ;
+    border-radius: 5px;
     padding: 5px;
     margin-left: 250px;
+}
 
-  }
+p {
+    font-size: 20px;
+    font-family: 'Krub', sans-serif;
+}
+
+h4 {
+    font-size: 36px;
+    font-family: 'Krub', sans-serif;
+}
+
+h5 {
+    font-size: 28px;
+    font-family: 'Krub', sans-serif;
+}

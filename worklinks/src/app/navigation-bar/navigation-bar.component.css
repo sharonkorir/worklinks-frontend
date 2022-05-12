@@ -73,13 +73,16 @@ nav{
 /* .buttn{
   margin-left: 600px;
 } */
-.jobse{
-  color: white;
+
+
+a{
   text-decoration: none;
+  color: white;
   margin-right: 20px;
+  font-size: 20px;
 }
-.comp{
-  color: white;
+
+a:hover {
   text-decoration: none;
-  margin-right: 20px;
+  color: white;
 }

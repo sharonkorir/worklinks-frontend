@@ -15,6 +15,11 @@
     margin-top: 4rem;
 }
 
+h4 {
+    text-align: center;
+    color: #49224A;
+}
+
 .btn {
     background-color: #E2AA2E;
 }
@@ -61,4 +66,20 @@ h3 {
   background-color: #49224A;
   color: white;
   border: solid white 1px;
+}
+
+p,
+li {
+    font-size: 20px;
+    font-family: 'Krub', sans-serif;
+}
+
+h4 {
+    font-size: 36px;
+    font-family: 'Krub', sans-serif;
+}
+
+h5 {
+    font-size: 28px;
+    font-family: 'Krub', sans-serif;
 }

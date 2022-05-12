@@ -14,11 +14,26 @@ import { Emitters } from '../emmiters/emmiters';
 export class ProfileFormComponent implements OnInit {
   form!:FormGroup;
   message = '';
+  data: any;
   constructor(
     private formBuilder:FormBuilder,
     private http:HttpClient,
     private router:Router,
   ) { }
+  
+  
+  onSubmit(data: any){
+    this.http.post('https://moiwork.herokuapp.com/api/UpdateUserProfile/',data, {withCredentials: true})
+    .subscribe((results) =>{
+      console.warn('results',results)
+      alert("Profile updated Successfully")
+      this.router.navigate(['/job/application'])
+   
+      this.data.reset();
+    })
+    console.log(data);
+    
+     }
 
   ngOnInit(): void {
     this.http.get('https://moiwork.herokuapp.com/user', {withCredentials: true}).subscribe(

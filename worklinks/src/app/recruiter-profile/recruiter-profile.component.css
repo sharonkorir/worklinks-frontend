@@ -50,3 +50,19 @@ h2 {
   border: solid white 1px;
   
 }
+
+p,
+li {
+    font-size: 20px;
+    font-family: 'Krub', sans-serif;
+}
+
+h4 {
+    font-size: 36px;
+    font-family: 'Krub', sans-serif;
+}
+
+h5 {
+    font-size: 28px;
+    font-family: 'Krub', sans-serif;
+}
