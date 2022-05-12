@@ -1,80 +1,78 @@
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-      <a class="navbar-brand" style="font-family: 'Big Shoulders Stencil Text', cursive; font-size: 40px; margin-left: 300px;" routerLink="/jobseeker/landingpage">WorkLinks</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="d-flex" id="navbarSupportedContent" style="margin-right: 280px;">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" style="font-size:larger;" routerLink="/jobseeker/landingpage">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style="font-size:larger;" href="/jobseeker-profile">View Profile</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-size:larger;" aria-expanded="false">
-                    Profile
-                  </a>
-                  <a class="dropdown-item" href="/jobseeker-profile">Update Profile</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/seekers-profile">View Profile</a></li>
-                      <li><a class="dropdown-item" href="/jobseeker-profile">Update Profile</a></li> 
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" font-family="Big Shoulders Stencil Display" href="#">WorkLinks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="d-flex" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
 
-                  </ul>
-              </li> -->
-              <li>
-                  <button class="btn btn-sec" type="submit">LogOut</button>
-              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Profile
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/seekers-profile">View Profile</a></li>
+                        <li><a class="dropdown-item" href="/jobseeker-profile">Update Profile</a></li>
 
-          </ul>
+                    </ul>
+                </li> -->
+                <li>
+                    <button class="btn btn-sec" type="submit">LogOut</button>
+                </li>
+
+            </ul>
 
 
 
-      </div>
-  </div>
+        </div>
+    </div>
 </nav>
-<div class="container" style="padding-top: 120px;">
+<div class="container">
 
-  <div class="prfile" *ngFor="let profiles of profile">
+    <div class="prfile" *ngFor="let profiles of profile">
 
-      <div class="prof">
-          <div class="pic">
-              <img src="{{profiles.profile_image.url}}" alt="">
-          </div>
-          <div class="details">
-              <h5><span> <i class="fa  fa-user" aria-hidden="true"></i>:</span>{{profiles.full_name}}</h5>
-              <h5><span><i class="fa fa-envelope" aria-hidden="true"></i>:</span>{{profiles.email}}</h5>
-              <h5><span><i class="fa fa-address-card" aria-hidden="true"></i>:</span>{{profiles.address}} </h5>
-              <!-- <h5><span><i class="fa fa-phone-square" aria-hidden="true"></i>:</span>0745939721</h5> -->
-          </div>
-      </div>
-      <div class="info">
-          <div class="bio">
-              <h3>Bio</h3>
-              <div class="p-3 bi border">
-                  {{profiles.bio}}
-              </div>
-          </div>
-          <div class="bio">
-              <h3>Work Experience</h3>
-              <div class="p-3 bi border">
-                  {{profiles.work_experience}}
-              </div>
-          </div>
+        <div class="prof">
+            <div class="pic">
+                <img *ngFor="let img of profile" src="
+                cloudinary.url({{filteredImages(img.profile_image)}})">
+            </div>
+            <div class="details">
+                <h5><span> <i class="fa  fa-user" aria-hidden="true"></i>:</span>{{profiles.full_name}}</h5>
+                <h5><span><i class="fa fa-envelope" aria-hidden="true"></i>:</span>{{profiles.email}}</h5>
+                <h5><span><i class="fa fa-address-card" aria-hidden="true"></i>:</span>{{profiles.address}} </h5>
+                <!-- <h5><span><i class="fa fa-phone-square" aria-hidden="true"></i>:</span>0745939721</h5> -->
+            </div>
+        </div>
+        <div class="info">
+            <div class="bio">
+                <h3>Bio</h3>
+                <div class="p-3 bi border">
+                    {{profiles.bio}}
+                </div>
+            </div>
+            <div class="bio">
+                <h3>Work Experience</h3>
+                <div class="p-3 bi border">
+                    {{profiles.work_experience}}
+                </div>
+            </div>
 
-          <div class="bio">
-              <h3>Skills</h3>
-              <div class=" p-3 bi border">
-                  {{profiles.skills}}
-              </div>
-          </div>
-          <div class="bio">
-              <h3>References</h3>
-              <div class=" p-3 bi border">
-                  {{profiles.referees}}
-              </div>
-          </div>
-      </div>
-  </div>
+            <div class="bio">
+                <h3>Skills</h3>
+                <div class=" p-3 bi border">
+                    {{profiles.skills}}
+                </div>
+            </div>
+            <div class="bio">
+                <h3>References</h3>
+                <div class=" p-3 bi border">
+                    {{profiles.referees}}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

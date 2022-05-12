@@ -29,6 +29,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
@@ -60,6 +61,8 @@ import { RecruiterLandingPageComponent } from './recruiter-landing-page/recruite
     EmployerLoginComponent,
     EmployerNavbarComponent,
     SearchResultsComponent,
+    SearchFilterPipe,
+    JobapplicationpageComponent,
     EmployerLandingComponent,
     SearchFilterPipe,
     JobapplicationpageComponent,

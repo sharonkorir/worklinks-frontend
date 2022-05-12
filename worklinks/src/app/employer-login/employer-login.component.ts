@@ -30,3 +30,4 @@ export class EmployerLoginComponent implements OnInit {
       }).subscribe(() => this.router.navigate(['/recruiter-profile']));
     }
   }
+  

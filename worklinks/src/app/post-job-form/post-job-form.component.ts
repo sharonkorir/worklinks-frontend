@@ -8,16 +8,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./post-job-form.component.css']
 })
 export class PostJobFormComponent implements OnInit {
+  formValue: any;
 
 
   constructor(
-    private http:HttpClient
+    private http:HttpClient,
+    private router:Router
    
   ) { }
   onSubmit(data: any){
     this.http.post('http://worklinks.herokuapp.com/api/Job/',data)
     .subscribe((results) =>{
       console.warn('results',results)
+      alert("Job Posted Successfully")
+      this.router.navigate(['/recruiter-dashboard'])
+
+      this.formValue.reset();
     })
     console.log(data);
     

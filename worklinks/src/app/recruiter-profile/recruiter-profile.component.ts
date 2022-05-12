@@ -12,6 +12,7 @@ import { Emitters } from '../emmiters/emmiters';
   styleUrls: ['./recruiter-profile.component.css']
 })
 export class RecruiterProfileComponent implements OnInit {
+  data: any;
   form!:FormGroup;
   message = '';
 
@@ -21,17 +22,22 @@ export class RecruiterProfileComponent implements OnInit {
     private router:Router,
   ) { }
 
+ 
+onSubmit(data: any){
+  this.http.post('https://moiwork.herokuapp.com/api/EmployerProfile/',data, {withCredentials: true})
+  .subscribe((results) =>{
+    console.warn('results',results)
+    alert("Profile updated Successfully")
+    this.router.navigate(['/recruiter-dashboard'])
+ 
+    this.data.reset();
+  })
+  console.log(data);
+  
+   }
+
   ngOnInit(): void {
 
-    this.form =this.formBuilder.group({
-      name:'',
-      company_pic:'',
-      location:'',
-      address:'',
-      email:'',
-      contacts:'',
-      company_bio:''
-    })
     this.http.get('https://moiwork.herokuapp.com/user', {withCredentials: true}).subscribe(
       (res: any) => {
         this.message = `Hi ${res.name}`;
@@ -44,13 +50,8 @@ export class RecruiterProfileComponent implements OnInit {
     );
     
   }
-submit():void{
-  console.log(this.form.getRawValue());
-  this.http.post('',this.form.getRawValue())
-  subscribe(() => this.router.navigate(['recruiter-dashboard']));
+
 }
-}
-function subscribe(arg0: () => Promise<boolean>) {
-  throw new Error('Function not implemented.');
-}
+
+
 

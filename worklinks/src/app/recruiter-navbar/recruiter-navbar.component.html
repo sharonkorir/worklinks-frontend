@@ -1,17 +1,16 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" style="font-family: 'Big Shoulders Stencil Text', cursive; font-size: 40px; margin-left: 300px;"  routerLink="/employer/landingpage">WorkLinks</a>
+        <a class="navbar-brand" style="font-family: 'Big Shoulders Stencil Text', cursive; font-size: 40px; margin-left: 300px;" routerLink="/employer/landingpage">WorkLinks</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        
-          <div>
+        <div>
             <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="!authenticated">
                 <li class="nav-item">
-                    <a routerLink="/employer-login" class="nav-link">Login</a>
+                    <a routerLink="/employer/login" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/employer-register" class="nav-link">Register</a>
+                    <a routerLink="/employer/register" class="nav-link">Register</a>
                 </li>
             </ul>
 
@@ -21,13 +20,11 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" style="font-size:larger;" href="/recruiter-dashboard">Dashboard</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" routerLink="/seekers-profile" style="font-size: larger;">View Profile</a>
-                </li> -->
+
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" routerLink="/recruiter-profile" style="font-size: larger;">Update Profile</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/recruiter-profile" style="font-size: larger;">Update Profile</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" style="font-size:larger;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Profile
                     </a>
@@ -36,9 +33,10 @@
                         <li><a class="dropdown-item" href="/recruiter-profile">Update Profile</a></li>
 
                     </ul>
-                </li> -->
+                </li>
+
                 <li>
-                    <button class="btn btn-sec" type="submit" routerLink="/">LogOut</button>
+                    <a routerLink="/employer/login" class="nav-link" (click)="logout()">Logout</a>
                 </li>
 
             </ul>
