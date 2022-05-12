@@ -55,3 +55,15 @@ h3 {
     margin-bottom: 3rem;
     margin-top: 5rem;
 }
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+ 
+}
+
+.btn-sec{
+  background-color: #49224A;
+  color: white;
+  border: solid white 1px;
+}

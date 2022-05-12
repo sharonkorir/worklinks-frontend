@@ -1,4 +1,5 @@
-<app-navigation-bar></app-navigation-bar>
+<app-navigation-bar>
+</app-navigation-bar>
 <div class="container">
     <div class="row">
         <div class="col-sm-6 offset-3">
@@ -6,17 +7,39 @@
                 <h5>Sign in and browse our job seekers</h5>
             </div>
             <form [formGroup]="form" (submit)="submit()">
-                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                <div class="head">
+                    <h1>Login</h1>
+                    <p>Log in to your account and start recruiting </p>
+                    <div class="form-group">
 
-                <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
 
-                <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+                        <br>
+                    </div>
 
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label><br>
+                    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+                    <br>
+
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password:</label><br>
+                    <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+                    <br>
+
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-pri" style="margin-left: 220px;">Login</button>
+                </div>
+
+
+                <!-- <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button> <button type="submit" class="btn btn-primary">Back</button> -->
             </form>
-            <div>
+            <!-- <div>
                 <p>Don't have an account?<a class="nav-item nav-link" routerLink="/employer/register">Sign up</a></p>
-            </div>
+            </div> -->
             <p></p>
             <div class="row"></div>
 

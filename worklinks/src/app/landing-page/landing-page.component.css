@@ -44,8 +44,7 @@ nav {
 }
 
 .about .right img {
-    width: 100%;
-    height: 30%;
+    width: 100%
 }
 
 .about .left h1 {
@@ -82,22 +81,13 @@ nav {
     width: 100%;
 }
 
-.mission .right h1 {
-    text-align: center;
-    color: rgb(54, 53, 53);
-    margin: 0 0 20px 0;
-}
-
-.mission .right hr {
-    width: 35%;
-    border-top: 2px solid #000;
-    border-bottom: none;
-}
-
-.mission .right p {
-    font-size: 1rem;
-    margin: 40px auto;
-    width: 80%
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(51, 51, 51, 0.3);
+    position: absolute;
+    top: 0;
+    z-index: 5;
 }
 
 .team {
@@ -112,46 +102,28 @@ nav {
     color: rgb(43, 41, 41);
 }
 
-.team h1 hr {
-    width: 15%;
-    border-top: 2px solid #000;
-    background-color: transperant;
-    border-bottom: none;
-    margin-bottom: 50px;
-}
-
-.team .card {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    position: relative;
-    min-width: 20%;
-    height: 500px !important;
-    height: auto;
-    background-color: #fff;
+.about .left {
+    padding: 2% 0;
+    line-height: 5rem;
+    width: 50%;
     display: inline-block;
-    margin: 40px 6.5%;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+    font-size: xx-large;
+}
+
+.about .right {
+    width: 50%;
+    display: inline-block;
+}
+
+.about .right img {
+    width: 100%;
+    height: 30%;
+}
+
+.about .left h1 {
     text-align: center;
-}
-
-.card .circle-container {
-    position: relative;
-    background-color: #1a3d9c;
-    width: 200px;
-    height: 200px;
-    border: none;
-    border-radius: 50%;
-    margin: auto;
-    color: #fff;
-}
-
-.circle-container h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 60px;
+    color: rgb(46, 45, 45);
+    margin: 0 0 10px 0;
 }
 
 .team .card h2 {
@@ -159,9 +131,10 @@ nav {
     margin: 30px 0 0 0;
 }
 
-.team .card h4 {
-    text-align: center;
-    margin: 10px 0 0 0;
+.about .left p {
+    font-size: 1rem;
+    margin: 40px auto;
+    width: 80%
 }
 
 .team .card p {
@@ -180,9 +153,10 @@ footer {
     background-color: #28587c;
 }
 
-footer p {
+.mission .right h1 {
     text-align: center;
-    padding: 0 2%;
+    color: rgb(54, 53, 53);
+    margin: 0 0 20px 0;
 }
 
 
@@ -234,7 +208,7 @@ footer p {
 }
 
 #picpic {
-    margin-left: 40rem;
+    margin-left: 48em;
     height: 18rem;
 }
 
@@ -242,6 +216,7 @@ footer p {
     /* font-family:'Big Shoulders Stencil Text', cursive; */
     text-align: center;
     color: black;
+    line-height: 9rem;
 }
 
 .row {
@@ -253,5 +228,11 @@ footer p {
     color: black;
 }
 
+.row {
+    margin-left: -3rem;
+}
 
-/* progress bar */
+#onebutton {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    margin-left: 6rem;
+}
