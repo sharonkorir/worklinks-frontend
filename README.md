@@ -6,11 +6,11 @@ This is a job seeking application built on Angular and Django framworks.An app t
 
 ## Design
 This how the App appears:
+![alt text](https://github.com/Teri11/Github-Search/blob/master/src/assets/search.jpeg)
 ![alt text]()
 ![alt text]()
 ![alt text]()
-![alt text]()
-![alt text]()
+![alt text](https://github.com/Teri11/worklinks-frontend/blob/master/src/assets/images/footer.jpeg)
 
 ## Setup/Installation Requirements
 1)Install the Visual studio code.<br>2)Git clone the repository.<br>3)Generate an api key and store it in the environment<br>4)Make sure the live server extension is installed.<br>4)Click on Go live
