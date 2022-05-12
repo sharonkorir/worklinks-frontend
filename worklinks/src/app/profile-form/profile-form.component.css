@@ -39,3 +39,33 @@ h4,
 h2 {
     color: #E2AA2E;
 }
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+ 
+}
+
+.btn-sec{
+  background-color: #49224A;
+  color: white;
+  border: solid white 1px;
+}
+
+.signupbtn {
+  float: left;
+  width: 20%;
+  color: white;
+  background-color: #E2AA2E;
+  border: none;
+  border-radius: 10px ;
+  padding: 10px;
+  margin-left: 240px;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -14,3 +14,16 @@
 .dropdown-menu li a {
     color: #49224A;
 }
+
+.btn-pri{
+  background-color: #E2AA2E;
+  color: white;
+  
+}
+
+.btn-sec{
+  background-color: #49224A;
+  color: white;
+  border: solid white 1px;
+  
+}

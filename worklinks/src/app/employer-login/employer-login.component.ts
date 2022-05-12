@@ -29,5 +29,9 @@ export class EmployerLoginComponent implements OnInit {
         withCredentials: true
       }).subscribe(() => this.router.navigate(['/recruiter-profile']));
     }
+<<<<<<< HEAD
   }
   
+=======
+  }
+>>>>>>> 6ec6c70ac800e90994e820a06de75ada738872a3
