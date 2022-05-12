@@ -1,7 +1,6 @@
 .footer {
     background-color: #49224A;
 }
-
 .btn {
     background-color: #E2AA2E;
 }
@@ -11,8 +10,6 @@
 }
 #finale.a{
     margin-left: 7rem;
-    
-
 }
 #icon{
     margin-left: 100rem;
@@ -20,9 +17,12 @@
 .footfoot{
     font-family: 'Big Shoulders Stencil Text', cursive;
     font-size: 2rem;
-    margin-left: -6rem;
+    /* margin-left: -6rem; */
 }
-.footfoot1{
+#icon{
+  min-width: 30px;
+}
+/* .footfoot1{
     margin-left: -6rem;
+} */
 
-}

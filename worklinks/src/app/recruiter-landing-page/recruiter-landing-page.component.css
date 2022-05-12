@@ -1,0 +1,193 @@
+/* Navbar */
+nav{
+    /*text-align: center; */
+    font-size: 25px;
+    background-color:#49224A;
+    color: cornsilk;
+  }
+  .navbar-brand{
+    color: white;
+    font: bold;
+    padding-left: 300px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size:40px;
+  }
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .spacer {
+    flex: 1;
+  }
+  .toolbar {
+    position: fixed;
+    width: 100%;
+    /* font-family: 'Big Shoulders Stencil Text', cursive; */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #49224A;
+    color: white;
+    font-weight: 600;
+  }
+  .toolbar> a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15rem;
+    color: white;
+    font-size: larger;
+  }
+  .toolbar img {
+    margin: 0 16px;
+  }
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+  #loginb{
+    background-color: #49224A;
+    border-color: white;
+    margin-right: 10px;
+    color: white;
+  }
+  #signb{
+   background-color: white;
+   color: #49224A;
+   margin-right: 16px;
+  }
+  .buttn{
+    margin-left: 850px;
+  }
+  .jobse{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  .comp{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+
+  #hero {
+    background-image: url(https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .herofinal {
+    height: 600px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero{
+    width: 80%; 
+    padding-top: 50px;
+  }
+  
+  .hero1{
+    width: 80%; 
+    padding-top: 50px;
+  }
+  
+  #jobseekers {
+    background-image: url(https://c1.wallpaperflare.com/preview/178/815/737/professions-job-digital-digitization.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #recruiters {
+    background-image: url(https://media.istockphoto.com/photos/skills-learning-personal-development-finance-competency-business-picture-id1319404394?b=1&k=20&m=1319404394&s=170667a&w=0&h=e7hL3jnIwoiQpDRS7TLq0VqR1l_fhUQxfg-B67UvEUI=);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .jobseekers{
+    float: right;
+    width: 80%; 
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px
+  }
+  
+  li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: FontAwesome;
+    content: "\f140";
+  }
+  
+  #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .pri1{
+    background-color: #E2AA2E;
+    color: white;
+  }
+  
+  .sec1{
+    background-color: white;
+    color: #E2AA2E;
+  }
+  
+  p, li{
+    font-size: 20px;
+    font-family: 'Krub', sans-serif; 
+  }
+  
+  h4{
+    font-size: 36px;
+    font-family: 'Krub', sans-serif;
+  }
+  
+  h5{
+    font-size: 28px;
+    font-family: 'Krub', sans-serif;
+  }

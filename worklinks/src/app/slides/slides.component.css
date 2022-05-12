@@ -1,47 +1,41 @@
-
 body {
-  background: #49224a;
+  background: #49224A;
   font-family: "Oswald", sans-serif;
   font-style: italic;
 }
-
 .container {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 40%;
   left: 50%;
 }
-
 .glitch, .glow {
-  margin-left: -5rem;
-  color: #dfbfbf;
+  margin-left: -15.5rem;
+  color: #DFBFBF;
   position: relative;
   font-size: 9vw;
   animation: glitch 5s 5s infinite;
 }
-
 .glitch::before, .glow::before {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: -5px 0 #49224a;
+  text-shadow: -5px 0 #49224A;
   background: black;
   overflow: hidden;
   top: 0;
   animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
 }
-
 .glitch::after, .glow::after {
   content: attr(data-text);
   position: absolute;
   left: 2px;
   text-shadow: -5px 0 lightgreen;
-  background: #49224a;
+  background: #49224A;
   overflow: hidden;
   top: 0;
   animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
 }
-
 @keyframes glitch {
   1% {
     transform: rotateX(10deg) skewX(90deg);
@@ -241,7 +235,6 @@ body {
   overflow: hidden;
   mix-blend-mode: difference;
 }
-
 .scanlines::before {
   content: "";
   position: absolute;
@@ -252,7 +245,6 @@ body {
   background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
   animation: fudge 7s ease-in-out alternate infinite;
 }
-
 @keyframes fudge {
   from {
     transform: translate(0px, 0px);
@@ -262,17 +254,16 @@ body {
   }
 }
 .glow {
-  text-shadow: 0 0 1000px #49224a;
+  text-shadow: 0 0 1000px #49224A;
   color: transparent;
   position: absolute;
   top: 0;
 }
-
 .subtitle {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 0.8vw;
-  color:  #49224a;
+  color:  #49224A;
   text-transform: uppercase;
   letter-spacing: 1em;
   text-align: center;
@@ -280,7 +271,6 @@ body {
   left: 17%;
   animation: glitch-2 5s 5.02s infinite;
 }
-
 @keyframes glitch-2 {
   1% {
     transform: rotateX(10deg) skewX(70deg);

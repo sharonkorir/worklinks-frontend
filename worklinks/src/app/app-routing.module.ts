@@ -14,10 +14,15 @@ import { EmployerSignupComponent } from './employer-signup/employer-signup.compo
 import { EmployerLoginComponent } from './employer-login/employer-login.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
+import { HomeComponent } from './home/home.component';
+import { JobseekerLandingPageComponent } from './jobseeker-landing-page/jobseeker-landing-page.component';
+import { RecruiterLandingPageComponent } from './recruiter-landing-page/recruiter-landing-page.component';
+
 
 
 const routes: Routes = [
-  {path:'',component:LandingPageComponent},
+  // {path:'',component:LandingPageComponent},
+  { path: '', component: HomeComponent},
   {
     path:'jobseeker-profile',component:ProfileComponent
     
@@ -47,6 +52,8 @@ const routes: Routes = [
   {path: 'jobseeker/login', component: LoginJobseekerComponent},
   {path: 'applicants/applicants', component: ApplicantsComponent},
   {path: 'job/application', component: JobapplicationpageComponent},
+  { path: 'jobseeker/landingpage', component: JobseekerLandingPageComponent},
+  { path: 'employer/landingpage', component: RecruiterLandingPageComponent},
 
 
 
@@ -60,6 +67,7 @@ const routes: Routes = [
   { path: 'employer/register', component: EmployerSignupComponent},
   { path: 'employer/login', component: EmployerLoginComponent},
   { path: 'search', component: SearchResultsComponent},
+  
 ];
 
 @NgModule({

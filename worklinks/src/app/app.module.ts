@@ -29,9 +29,13 @@ import { SearchResultsComponent } from './search-results/search-results.componen
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { EmployerLandingComponent } from './employer-landing/employer-landing.component';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { JobapplicationpageComponent } from './jobapplicationpage/jobapplicationpage.component';
+import { HomeComponent } from './home/home.component';
+import { JobseekerLandingPageComponent } from './jobseeker-landing-page/jobseeker-landing-page.component';
+import { RecruiterLandingPageComponent } from './recruiter-landing-page/recruiter-landing-page.component';
 
 
 @NgModule({
@@ -57,9 +61,14 @@ import { JobapplicationpageComponent } from './jobapplicationpage/jobapplication
     EmployerLoginComponent,
     EmployerNavbarComponent,
     SearchResultsComponent,
+    SearchFilterPipe,
+    JobapplicationpageComponent,
     EmployerLandingComponent,
     SearchFilterPipe,
     JobapplicationpageComponent,
+    HomeComponent,
+    JobseekerLandingPageComponent,
+    RecruiterLandingPageComponent,
     
 
   ],

@@ -6,5 +6,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap');
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+
+
+body { 
+  margin: 0; 
+  font-family: 'Krub', sans-serif; 
+}
+
+.pri1{
+  background-color: #E2AA2E;
+  color: white;
+}
+
+.sec1{
+  background-color: white;
+  color: #E2AA2E;
+}

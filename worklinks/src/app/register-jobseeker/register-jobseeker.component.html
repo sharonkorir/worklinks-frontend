@@ -1,44 +1,34 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top ">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">Worklinks</a>
-      </div>
-    <div class="buttn" id="pages">
-        <a href="#" class="comp" routerLink="/"> Home</a>
-        <button class="btn " id="signb" routerLink="/jobseeker/register">Sign Up</button>
-        <button class="btn " id="loginb" routerLink="/jobseeker/login">Login</button>
-    </div>
-</nav> -->
 <app-navigation-bar></app-navigation-bar>
-<form action="/action_page.php" style="border:1px solid #ccc">
-    <div class="container" id="regform">
-        <div class="head">
-            <h1>Register</h1>
-      <p>Please enter your credentials to <br> Register as job seeker </p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-3">
+            <form [formGroup]="form" (submit)="submit()">
+                <div class="head">
+
+                    <h5>Create an account to <br> search for your dream job</h5>
+                    <br>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Username:</label><br>
+                    <input formControlName="name" class="form-control" placeholder="Name" required>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label><br>
+                    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label><br>
+                    <input formControlName="password" type="password" class="form-control" placeholder="Password" required>
+                    <br>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-pri" style="margin-left: 220px;">Sign up</button>
+                </div>
+            </form>
         </div>
-      <hr>
-  
-      <label for="email"><b>Name:</b></label><br>
-      <input type="text" placeholder="Enter your name" name="email" required><br>
-
-      <label for="email"><b>Email:</b></label><br>
-      <input type="text" placeholder="Enter your email" name="email" required><br>
-
-      <label for="phone number"><b>Phone no:</b></label><br>
-      <input type="number" placeholder="Enter your phone no." name="phone-no." required><br>
-  
-  
-      <label for="psw"><b>Password:</b></label><br>
-      <input type="password" placeholder="Enter your Password" name="psw" required><br>
-  
-      <label for="psw-repeat"><b>Confirm Password:</b></label><br>
-      <input type="password" placeholder="Enter your Password" name="psw-repeat" required>
-      
-      
-  
-      <div class="clearfix">
-        <button type="submit" class="signupbtn" routerLink="/jobseeker/login">Sign up</button>
-      </div>
     </div>
-  </form>
-  
-
+</div>
