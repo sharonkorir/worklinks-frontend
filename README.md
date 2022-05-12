@@ -36,7 +36,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 1)HTML. <br>2)CSS.<br>3)Angular.<br>4)Typescript.<br> 5)Bootstrap.<br> 6)Django.
 
 ## Support and contact details
-Email Address;augustineteri157@gmail.com
+Email Address;augustineteri157@gmail.com<br>brian.otieno@student.moringaschool.com<br>moi.shadrack@student.moringaschool.com<br>venusmwende@gmail.com<br>sharon.korir@student.moringaschool<br>tracysareto@gmail.com
 
 ## License
 Copyright (c) [2022] Kubai Augustine Mweteri,Tracy Chepkorir,Moi Shadrack,Brian Otieno,Venus Kavunza and Sharon Korir.
