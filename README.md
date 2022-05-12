@@ -6,7 +6,6 @@ This is a job seeking application built on Angular and Django framworks.An app t
 
 ## Design
 This how the App appears:
-![alt text](https://github.com/Teri11/Github-Search/blob/master/src/assets/search.jpeg)
 ![alt text]()
 ![alt text]()
 ![alt text]()
