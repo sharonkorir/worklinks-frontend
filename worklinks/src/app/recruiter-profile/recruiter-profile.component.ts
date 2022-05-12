@@ -38,18 +38,6 @@ onSubmit(data: any){
 
   ngOnInit(): void {
 
-<<<<<<< HEAD
-=======
-    this.form =this.formBuilder.group({
-      name:'',
-      company_pic:'',
-      location:'',
-      address:'',
-      email:'',
-      contacts:'',
-      company_bio:''
-    })
->>>>>>> 6ec6c70ac800e90994e820a06de75ada738872a3
     this.http.get('https://moiwork.herokuapp.com/user', {withCredentials: true}).subscribe(
       (res: any) => {
         this.message = `Hi ${res.name}`;

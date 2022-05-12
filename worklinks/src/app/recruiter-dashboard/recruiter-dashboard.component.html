@@ -25,19 +25,11 @@
     <h3>You have {{ jobs.length }} jobs posted</h3>
     <div class="row gx-5  ">
         <div class="jobs col-md-6" *ngFor="let job of jobs| searchList: searchList">
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ec6c70ac800e90994e820a06de75ada738872a3
             <div class="p-3 border">
                 <h3>{{job.title}}</h3>
                 <div class="sub-head top">
                     <p><i class="fa fa-briefcase" aria-hidden="true"></i>{{job.jobtype}}</p>
-<<<<<<< HEAD
                     <p routerLink="/applicants/applicants"><i class="fa fa-users" aria-hidden="true"></i>view Applicants</p>
-=======
-                    <a routerLink="/applicants/applicants" style="text-decoration: none; color: #E2AA2E;"><i class="fa fa-users" aria-hidden="true"></i>6 Applicants</a>
->>>>>>> 6ec6c70ac800e90994e820a06de75ada738872a3
                 </div>
                 <br>
                 <p>{{job.requirements}}</p>

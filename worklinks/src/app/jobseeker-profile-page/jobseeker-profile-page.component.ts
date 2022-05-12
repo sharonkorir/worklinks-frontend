@@ -9,11 +9,7 @@ export class Profile{
     public email: string,
     public location: string,
     public jobtype: string,
-<<<<<<< HEAD
     public profile_image:File,
-=======
-    public profile_image:any,
->>>>>>> 6ec6c70ac800e90994e820a06de75ada738872a3
     public resume:any,
     public bio:string,
     public work_experience:string,
@@ -47,12 +43,8 @@ profile!:Profile[];
       }
     );
   }
-<<<<<<< HEAD
   filteredImages(value: any) {
     const imageString = value.replace('https://moiwork.herokuapp.com/media/', 'https://moiwork.herokuapp.com/media/')
     return imageString
   }
 }
-=======
-}
->>>>>>> 6ec6c70ac800e90994e820a06de75ada738872a3
